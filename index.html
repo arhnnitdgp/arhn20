@@ -59,24 +59,6 @@
     <div id="fullpage">
         <!-- landing -->
         <div class="section " id="landing">
-            <nav id="navigation">
-                <ul>
-                    <li class="current-item">
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Company Profile</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
-                <span id="slide-line"></span>
-            </nav>
-
             <h1>Landing</h1>
             <img id="header" src="img/Aarohan-2019-Header.png" alt="arhn2020" />
             <!-- eye -->
@@ -91,6 +73,13 @@
         <div class="section" id="about">
             <div class="intro">
                 <h1>About Us</h1>
+            </div>
+        </div>
+
+        <!-- events  -->
+        <div class="section" id="events">
+            <div class="intro">
+                <h1>Events</h1>
             </div>
             <div class="center"></div>
             <div class="rad" id="rad1">
@@ -115,14 +104,6 @@
             <div class="rad" id="rad6">
                 <div class="sides" id="side6"></div>
             </div>
-
-        </div>
-
-        <!-- events  -->
-        <div class="section" id="events">
-            <div class="intro">
-                <h1>Events</h1>
-            </div>
         </div>
 
         <!-- workshop -->
@@ -145,7 +126,7 @@
                 <h1>Major Attractions</h1>
             </div>
         </div>
-        
+
         <!-- sponsors -->
         <div class="section" id="sponsors">
             <div class="intro">
@@ -203,7 +184,7 @@
             var loadedSection = this;
 
             //using anchorLink
-            if (origin.anchor == 'home' && direction == 'down') {
+            if (origin.anchor == 'aboutus' && direction == 'down') {
                 // events animation
                 animateBadge()
                 rotateBadge()
