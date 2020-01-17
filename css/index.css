@@ -82,3 +82,79 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
+/* events */
+.center {
+  background-color: aliceblue;
+  position: absolute;
+  right: 49vw;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.sides {
+  background-color: beige;
+  position: absolute;
+  right: 50vw;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* events circle rad */
+.rad {
+  background-color: black;
+  height: 0;
+  width: 10vw;
+  z-index: 5;
+  position: relative;
+}
+
+#rad1 {
+  transform: rotateZ(27deg);
+  left: 35.8vw;
+  top: 4.4vh;
+}
+
+#rad2 {
+  transform: rotateZ(90deg);
+  left: 40.9vw;
+  top: -0.5vh;
+}
+
+#rad3 {
+  transform: rotateZ(-34deg);
+  left: 36vw;
+  top: 13vh;
+}
+
+#rad4 {
+  transform: rotateZ(-90deg);
+  left: 40.9vw;
+  top: 19vh;
+}
+
+#rad5 {
+  transform: rotateZ(208deg);
+  left: 45.5vw;
+  top: 13.4vh;
+}
+
+#rad6 {
+  transform: rotateZ(-214deg);
+  left: 45vw;
+  top: 3vh;
+}
+
+#side1,
+#side2,
+#side3,
+#side4,
+#side5,
+#side6 {
+  opacity: 0;
+  top: -50px;
+  left: 200px;
+}

@@ -12,6 +12,8 @@
     <!-- fullpage cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
+    <!-- tweenmax cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
     <!-- css file -->
     <link rel="stylesheet" href="css/index.css" />
 </head>
@@ -27,10 +29,10 @@
                 <a href="#aboutus">About Us</a>
             </li>
             <li>
-                <a href="#events">Events & Workshop</a>
+                <a href="#event">Events & Workshop</a>
             </li>
             <li>
-                <a href="#schedule">Schedule</a>
+                <a href="#schedules">Schedule</a>
             </li>
             <li>
                 <a href="#mjr_attr">Major Attractions</a>
@@ -39,7 +41,7 @@
                 <a href="#sponsor">Sponsors</a>
             </li>
             <li>
-                <a href="#contact">Contact Us</a>
+                <a href="#contactus">Contact Us</a>
             </li>
         </ul>
         <span id="slide-line"></span>
@@ -72,6 +74,30 @@
             <div class="intro">
                 <h1>About Us</h1>
             </div>
+            <div class="center"></div>
+            <div class="rad" id="rad1">
+                <div class="sides" id="side1"></div>
+            </div>
+            <div class="rad" id="rad2">
+                <div class="sides" id="side2"></div>
+            </div>
+
+            <div class="rad" id="rad3">
+                <div class="sides" id="side3"></div>
+            </div>
+
+            <div class="rad" id="rad4">
+                <div class="sides" id="side4"></div>
+            </div>
+
+            <div class="rad" id="rad5">
+                <div class="sides" id="side5"></div>
+            </div>
+
+            <div class="rad" id="rad6">
+                <div class="sides" id="side6"></div>
+            </div>
+
         </div>
 
         <!-- events  -->
@@ -79,6 +105,7 @@
             <div class="intro">
                 <h1>Events</h1>
             </div>
+
         </div>
 
         <!-- workshop -->
@@ -96,7 +123,7 @@
         </div>
 
         <!-- major attractions -->
-        <div class="section" id="schedule">
+        <div class="section" id="attr">
             <div class="intro">
                 <h1>Major Attractions</h1>
             </div>
@@ -143,16 +170,28 @@
             "#4BBFC3",
             "#7BAABE",
         ],
-        	//Navigation
-	menu: '#menu',
-	lockAnchors: false,
-	anchors:['home', 'aboutus','events','workshop','schedule','mjr_attr','sponsor','accomod','contact'],
-	navigation: false,
-	navigationPosition: 'right',
-	navigationTooltips: ['firstSlide', 'secondSlide'],
-	showActiveTooltip: false,
-	slidesNavigation: false,
-	slidesNavPosition: 'bottom',
+        //Navigation
+        menu: '#menu',
+        lockAnchors: false,
+        anchors: ['home', 'aboutus', 'event', 'workshops', 'schedules', 'mjr_attr', 'sponsor', 'accomod', 'contactus'],
+        navigation: false,
+        navigationPosition: 'right',
+        navigationTooltips: ['firstSlide', 'secondSlide'],
+        showActiveTooltip: false,
+        slidesNavigation: false,
+        slidesNavPosition: 'bottom',
+
+        // animation afterload
+        afterLoad: function (origin, destination, direction) {
+            var loadedSection = this;
+
+            //using anchorLink
+            if (origin.anchor == 'home' && direction == 'down') {
+                // events animation
+                animateBadge()
+                rotateBadge()
+            }
+        }
     });
 </script>
 
