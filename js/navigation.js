@@ -1,38 +1,40 @@
 var j$ = jQuery,
-    $nav = j$("#navigation"),
-    $slideLine = j$("#slide-line"),
-    $currentItem = j$(".current-item");
+  $nav = j$("#navigation"),
+  $slideLine = j$("#slide-line"),
+  $currentItem = j$(".current-item");
 
-j$(function(){  
+j$(function() {
   // Menu has active item
   if ($currentItem[0]) {
     $slideLine.css({
-      "width": $currentItem.width(),
-      "left": $currentItem.position().left
+      width: $currentItem.width(),
+      left: $currentItem.position().left
     });
   }
-  
+
   // Underline transition
-  j$($nav).find("li").hover(
-    // Hover on
-    function(){
-      $slideLine.css({
-        "width": j$(this).width(),
-        "left": j$(this).position().left
-      });
-    },
-    // Hover out
-    function(){
-      if ($currentItem[0]) {
-        // Go back to current
+  j$($nav)
+    .find("li")
+    .hover(
+      // Hover on
+      function() {
         $slideLine.css({
-          "width": $currentItem.width(),
-          "left": $currentItem.position().left
+          width: j$(this).width(),
+          left: j$(this).position().left
         });
-      } else {
-        // Disapear
-        $slideLine.width(0);
+      },
+      // Hover out
+      function() {
+        if ($currentItem[0]) {
+          // Go back to current
+          $slideLine.css({
+            width: $currentItem.width(),
+            left: $currentItem.position().left
+          });
+        } else {
+          // Disapear
+          $slideLine.width(0);
+        }
       }
-    }
-   );
+    );
 });

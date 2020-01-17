@@ -12,20 +12,51 @@
     <!-- fullpage cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
+    <!-- tweenmax cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
     <!-- css file -->
     <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
-    <div id="fullpage">
-        <!-- Social Links -->
-        <div id="social_icons" class="social_links">
-            <a href="https://www.facebook.com/arhn.nitd/"><i class="fab fa-facebook-square"></i></a></br>
-            <a href="https://www.instagram.com/arhn.nitd/"><i class="fa fa-icon fa-instagram"></i></a></br>
-            <a href="https://twitter.com/aarohan_nitdgp?lang=en"><i class="fa fa-icon fa-twitter"></i></a></br>
-            <a href="https://www.youtube.com/user/arhnNITD"><i class="fa fa-icon fa-youtube-play"></i></a></br>
-        </div>
+    <!-- nav bar -->
+    <nav id="navigation">
+        <ul>
+            <li class="current-item">
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#aboutus">About Us</a>
+            </li>
+            <li>
+                <a href="#event">Events & Workshop</a>
+            </li>
+            <li>
+                <a href="#schedules">Schedule</a>
+            </li>
+            <li>
+                <a href="#mjr_attr">Major Attractions</a>
+            </li>
+            <li>
+                <a href="#sponsor">Sponsors</a>
+            </li>
+            <li>
+                <a href="#contactus">Contact Us</a>
+            </li>
+        </ul>
+        <span id="slide-line"></span>
+    </nav>
 
+    <!-- Social Links -->
+    <div id="social_icons" class="social_links">
+        <a href="https://www.facebook.com/arhn.nitd/"><i class="fab fa-facebook-square"></i></a></br>
+        <a href="https://www.instagram.com/arhn.nitd/"><i class="fa fa-icon fa-instagram"></i></a></br>
+        <a href="https://twitter.com/aarohan_nitdgp?lang=en"><i class="fa fa-icon fa-twitter"></i></a></br>
+        <a href="https://www.youtube.com/user/arhnNITD"><i class="fa fa-icon fa-youtube-play"></i></a></br>
+    </div>
+
+    <!-- fullpage div -->
+    <div id="fullpage">
         <!-- landing -->
         <div class="section " id="landing">
             <nav id="navigation">
@@ -54,63 +85,88 @@
                     <div class="ball"></div>
                 </div>
             </div>
+        </div>
 
-            <!-- about us -->
-            <div class="section" id="about">
-                <div class="intro">
-                    <h1>About Us</h1>
-                </div>
+        <!-- about us -->
+        <div class="section" id="about">
+            <div class="intro">
+                <h1>About Us</h1>
+            </div>
+            <div class="center"></div>
+            <div class="rad" id="rad1">
+                <div class="sides" id="side1"></div>
+            </div>
+            <div class="rad" id="rad2">
+                <div class="sides" id="side2"></div>
             </div>
 
-            <!-- events  -->
-            <div class="section" id="events">
-                <div class="intro">
-                    <h1>Events</h1>
-                </div>
+            <div class="rad" id="rad3">
+                <div class="sides" id="side3"></div>
             </div>
 
-            <!-- workshop -->
-            <div class="section" id="workshop">
-                <div class="intro">
-                    <h1>Workshop</h1>
-                </div>
+            <div class="rad" id="rad4">
+                <div class="sides" id="side4"></div>
             </div>
 
-            <!-- schedule -->
-            <div class="section" id="schedule">
-                <div class="intro">
-                    <h1>Schedule</h1>
-                </div>
+            <div class="rad" id="rad5">
+                <div class="sides" id="side5"></div>
             </div>
 
-            <!-- major attractions -->
-            <div class="section" id="schedule">
-                <div class="intro">
-                    <h1>Major Attractions</h1>
-                </div>
+            <div class="rad" id="rad6">
+                <div class="sides" id="side6"></div>
             </div>
 
-            <!-- sponsors -->
-            <div class="section" id="sponsors">
-                <div class="intro">
-                    <h1>Sponsors</h1>
-                </div>
-            </div>
+        </div>
 
-            <!-- accomodation, travel and hospitality -->
-            <div class="section" id="accomodation">
-                <div class="intro">
-                    <h1>Accomodation, Travel & Hospitality</h1>
-                </div>
-            </div>
-
-            <!-- contact us -->
-            <div class="section" id="contact">
-                <div class="intro">
-                    <h1>Contact Us</h1>
-                </div>
+        <!-- events  -->
+        <div class="section" id="events">
+            <div class="intro">
+                <h1>Events</h1>
             </div>
         </div>
+
+        <!-- workshop -->
+        <div class="section" id="workshop">
+            <div class="intro">
+                <h1>Workshop</h1>
+            </div>
+        </div>
+
+        <!-- schedule -->
+        <div class="section" id="schedule">
+            <div class="intro">
+                <h1>Schedule</h1>
+            </div>
+        </div>
+
+        <!-- major attractions -->
+        <div class="section" id="attr">
+            <div class="intro">
+                <h1>Major Attractions</h1>
+            </div>
+        </div>
+        
+        <!-- sponsors -->
+        <div class="section" id="sponsors">
+            <div class="intro">
+                <h1>Sponsors</h1>
+            </div>
+        </div>
+
+        <!-- accomodation, travel and hospitality -->
+        <div class="section" id="accomodation">
+            <div class="intro">
+                <h1>Accomodation, Travel & Hospitality</h1>
+            </div>
+        </div>
+
+        <!-- contact us -->
+        <div class="section" id="contact">
+            <div class="intro">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+    </div>
 </body>
 
 <!-- index js -->
@@ -130,10 +186,29 @@
             "#1bbc9b",
             "#4BBFC3",
             "#7BAABE",
-            "#1bbc9b",
-            "#4BBFC3",
-            "#7BAABE"
-        ]
+        ],
+        //Navigation
+        menu: '#menu',
+        lockAnchors: false,
+        anchors: ['home', 'aboutus', 'event', 'workshops', 'schedules', 'mjr_attr', 'sponsor', 'accomod', 'contactus'],
+        navigation: false,
+        navigationPosition: 'right',
+        navigationTooltips: ['firstSlide', 'secondSlide'],
+        showActiveTooltip: false,
+        slidesNavigation: false,
+        slidesNavPosition: 'bottom',
+
+        // animation afterload
+        afterLoad: function (origin, destination, direction) {
+            var loadedSection = this;
+
+            //using anchorLink
+            if (origin.anchor == 'home' && direction == 'down') {
+                // events animation
+                animateBadge()
+                rotateBadge()
+            }
+        }
     });
 </script>
 
