@@ -48,3 +48,37 @@
   margin-top: 1.5rem;
   font-size: 2rem;
 }
+
+/* navigation */
+#navigation {
+  position: fixed;
+  top: 0;
+  height: 9vh;
+  width: 100vw;
+  z-index: 5;
+  text-align: right;
+}
+
+#navigation ul {
+  text-align: right;
+}
+#navigation ul li {
+  display: inline-block;
+}
+#navigation ul li a {
+  display: inline-block;
+  padding: 30px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+#navigation ul li.current-item a {
+  color: #000;
+}
+#navigation #slide-line {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}

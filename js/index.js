@@ -8,3 +8,8 @@ document.onmousemove = function() {
   balls[0].style.top = y;
   balls[0].style.transform = "translate(-" + x + ",-" + y + ")";
 };
+
+// scroll to section
+function goToByScroll(id) {
+  $("html,body").animate({ scrollTop: $("#" + id).offset().top }, "slow");
+}
