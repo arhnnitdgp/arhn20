@@ -1,8 +1,34 @@
 /* landing */
 #header {
-  width: 50vw;
-  margin-left: 25vw;
+	width: 100vw;
+    height: auto;
+    position: relative;
+    z-index: 0;
+  
 }
+
+#front-wave{
+	position:absolute;
+	z-index:10;
+	top:0;
+}
+#front-wave-img{
+	height: auto;
+	width: 100vw;
+}
+
+/* eye container */
+#eye-container{
+	position:absolute;
+	z-index:1;
+	top:0;
+	right:39%;
+}
+#eye-container-img{
+	height: auto;
+	width: 22vw;
+}
+
 
 /* eye */
 .eyes {
@@ -11,6 +37,8 @@
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
+  z-index:2;
+  top: 50%;
 }
 .eye {
   width: 120px;
@@ -51,6 +79,7 @@
 
 /* navigation */
 #navigation {
+	display:none;
   position: fixed;
   top: 0;
   height: 9vh;
@@ -157,4 +186,75 @@
   opacity: 0;
   top: -50px;
   left: 200px;
+}
+
+/* about */
+#about-us{
+	position:relative;
+	z-index:10;
+	width: 100vw;
+    height: auto;
+}
+
+#about-handle{
+	position:absolute;
+	z-index:20;
+	top:0;
+}
+#about-us-img{
+	width: 100vw;
+    height: auto;
+    
+}
+#about-handle-img{
+	height: auto;
+	width: 100vw;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #header {
+    height:100%;
+	width:auto;
+  }
+  #front-wave{
+	height:100%;
+	width:auto;
+	top:unset;
+	bottom:0;
+  }
+	
+	#front-wave-img{
+	height:100%;
+	width:auto;
+	}
+  #eye-container{
+	top: unset;
+    bottom: -4px;
+  }
+  #eye-container-img{
+	height: auto;
+	width: 22vw;
+	bottom:-10%;
+	}
+  #about-us{
+	height:100%;
+	width:auto;
+  }
+
+   #about-handle{
+	
+	
+	}
+	#about-us-img{
+	height: 100vh;
+    width: auto;		
+	}
+	#about-handle-img{
+	
+	}
+	.eyes{
+		display:none;
+	}
+	
 }
