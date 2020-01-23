@@ -32,9 +32,6 @@
                 <a href="#event">Events & Workshop</a>
             </li>
             <li>
-                <a href="#schedules">Schedule</a>
-            </li>
-            <li>
                 <a href="#mjr_attr">Major Attractions</a>
             </li>
             <li>
@@ -59,62 +56,74 @@
     <div id="fullpage">
         <!-- landing -->
         <div class="section " id="landing">
-            
+
             <!-- <img id="header" src="img/Aarohan-2019-Header.png" alt="arhn2020" /> -->
-			<img id="header" src="assets/landing/a4png.png" alt="arhn2020"  />
+            <img id="header" src="assets/landing/a4png.png" alt="arhn2020" />
+
             <!-- eye -->
-			<div id="eye-container">
-				<img id="eye-container-img" src="assets/landing/a2.png" alt="arhn2020" />
-			</div>
-            <div class="eyes"  >
+            <div id="eye-container">
+                <img id="eye-container-img" src="assets/landing/a2.png" alt="arhn2020" />
+            </div>
+            <div id="eye" class="eyes">
                 <div class="eye">
                     <div class="ball"></div>
                 </div>
-            </div>	
-			<div id="front-wave">
-				<img id="front-wave-img" src="assets/landing/a1.png" alt="arhn2020" />
-			</div>
+            </div>
+
+            <div id="front-wave">
+                <img id="front-wave-img" src="assets/landing/a1.png" alt="arhn2020" />
+            </div>
         </div>
 
         <!-- about us -->
         <div class="section" id="about">
             <div class="intro">
-				<div id="about-us">
-					<img id="about-us-img"  src="assets/bgPics/about-us2.png" alt="arhn2020"  />
-				</div>
-				<div id="about-handle">
-					<img id="about-handle-img" src="assets/bgPics/peri2.png" alt="arhn2020"  />
-				</div>
+                <div id="about-us">
+                    <img id="about-us-img" src="assets/bgPics/about-us2.png" alt="arhn2020" />
+                </div>
+                <div id="about-handle">
+                    <img id="about-handle-img" src="assets/bgPics/peri2.png" alt="arhn2020" />
+                </div>
+                <div id="txt-2">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
             </div>
         </div>
 
         <!-- events  -->
         <div class="section" id="events">
-            <div class="intro">
-                <h1>Events</h1>
+            <div id="evnt_back">
+                <img src="img/events.png" />
             </div>
-            <div class="center"></div>
-            <div class="rad" id="rad1">
-                <div class="sides" id="side1"></div>
-            </div>
-            <div class="rad" id="rad2">
-                <div class="sides" id="side2"></div>
-            </div>
-
-            <div class="rad" id="rad3">
-                <div class="sides" id="side3"></div>
-            </div>
-
-            <div class="rad" id="rad4">
-                <div class="sides" id="side4"></div>
-            </div>
-
-            <div class="rad" id="rad5">
-                <div class="sides" id="side5"></div>
-            </div>
-
-            <div class="rad" id="rad6">
-                <div class="sides" id="side6"></div>
+            <div id="evnt_circle">
+                <div class="center"></div>
+                <div class="rad" id="rad1">
+                    <div class="sides" id="side1"></div>
+                </div>
+                <div class="rad" id="rad2">
+                    <div class="sides" id="side2"></div>
+                </div>
+    
+                <div class="rad" id="rad3">
+                    <div class="sides" id="side3"></div>
+                </div>
+    
+                <div class="rad" id="rad4">
+                    <div class="sides" id="side4"></div>
+                </div>
+    
+                <div class="rad" id="rad5">
+                    <div class="sides" id="side5"></div>
+                </div>
+    
+                <div class="rad" id="rad6">
+                    <div class="sides" id="side6"></div>
+                </div>
             </div>
         </div>
 
@@ -122,13 +131,6 @@
         <div class="section" id="workshop">
             <div class="intro">
                 <h1>Workshop</h1>
-            </div>
-        </div>
-
-        <!-- schedule -->
-        <div class="section" id="schedule">
-            <div class="intro">
-                <h1>Schedule</h1>
             </div>
         </div>
 
@@ -155,8 +157,8 @@
 
         <!-- contact us -->
         <div class="section" id="contact">
-            <div class="intro">
-                <h1>Contact Us</h1>
+            <div id="cntct_us">
+                <img src="img/cntct_us.png" />
             </div>
         </div>
     </div>
@@ -171,7 +173,7 @@
     var myFullpage = new fullpage("#fullpage", {
         sectionsColor: [
             "#1bbc9b",
-            "#4BBFC3",
+            "#131414",
             "#7BAABE",
             "#1bbc9b",
             "#4BBFC3",
@@ -183,10 +185,9 @@
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors: ['home', 'aboutus', 'event', 'workshops', 'schedules', 'mjr_attr', 'sponsor', 'accomod', 'contactus'],
+        anchors: ['home', 'aboutus', 'event', 'workshops', 'mjr_attr', 'sponsor', 'accomod', 'contactus'],
         navigation: false,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -199,10 +200,28 @@
             if (origin.anchor == 'aboutus' && direction == 'down') {
                 // events animation
                 animateBadge()
-                rotateBadge()
             }
         }
     });
+
+
+    // landing page style
+    var el = document.getElementById("eye-container");
+    var ell = el.offsetWidth;
+    var win = window.screen.width;
+    var rt = (win - ell) / 2;
+    var eye = document.getElementById("eye");
+    el.style.right = rt + "px";
+    eye.style.right = rt + "px";
+    eye.style.width = ell + "px";
+
+    //contact page style
+    var abtel = document.getElementById("about-handle");
+    var abtell = abtel.offsetWidth;
+    var abtrt = (win - abtell) / 2;
+    abtel.style.right = abtrt + "px";
+    console.log(abtell);
+    console.log(abtrt);
 </script>
 
 </html>

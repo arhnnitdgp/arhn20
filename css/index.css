@@ -1,7 +1,7 @@
 /* landing */
 #header {
 	width: 100vw;
-    height: auto;
+    height: 100vh;
     position: relative;
     z-index: 0;
   
@@ -19,14 +19,13 @@
 
 /* eye container */
 #eye-container{
-	position:absolute;
-	z-index:1;
-	top:0;
-	right:39%;
+  position: absolute;
+  z-index: 1;
+  right: 43%;
+  bottom: 0;
 }
 #eye-container-img{
-	height: auto;
-	width: 22vw;
+	height: 95vh;
 }
 
 
@@ -38,11 +37,11 @@
   width: 100%;
   text-align: center;
   z-index:2;
-  top: 50%;
+  top: 51%;
 }
 .eye {
-  width: 120px;
-  height: 120px;
+  width: 5vw;
+  height: 5vw;
   background: #fff;
   display: inline-block;
   margin: 40px;
@@ -52,15 +51,15 @@
 }
 
 .ball {
-  width: 40px;
-  height: 40px;
+  width: 1vw;
+  height: 1vw;
   background: #000;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 15px solid #333;
+  border: 15px solid #000;
 }
 
 /* social icons */
@@ -188,6 +187,26 @@
   left: 200px;
 }
 
+/* events */
+#evnt_back{
+  position: relative;
+  z-index: 0;
+}
+
+#evnt_back img {
+  width: 100%;
+}
+
+/* contact us */
+#cntct_us{
+  position: relative;
+  width: 100vw;
+}
+
+#cntct_us img {
+  width: 100%;
+}
+
 /* about */
 #about-us{
 	position:relative;
@@ -202,13 +221,23 @@
 	top:0;
 }
 #about-us-img{
-	width: 100vw;
+	width: 100%;
     height: auto;
     
 }
 #about-handle-img{
-	height: auto;
-	width: 100vw;
+	height: 90vh;
+	/* width: 100vw; */
+}
+
+#txt-2 {
+  position: absolute;
+  z-index: 55;
+  top: 23vh;
+  width: 30vw;
+  color: white;
+  right: 5vw;
+  font-size: 1.2em;
 }
 
 
