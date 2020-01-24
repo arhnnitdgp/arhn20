@@ -167,6 +167,10 @@ body {
   padding-top: 35%;
 }
 
+#evnt_circle_mobile{
+  display: none;
+}
+
 #evnt_circle {
   height: 50%;
   width: 50%;
@@ -251,10 +255,14 @@ body {
 #cntct_us {
   position: relative;
   width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #cntct_us img {
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 /* about */
@@ -301,6 +309,90 @@ body {
 
 
 @media only screen and (max-width: 600px) {
+  #evnt_circle_mobile {
+    display: block;
+    width: 100%;
+    right: 0;
+    height: 60%;
+    bottom: 20%;
+    position: absolute;
+  }
+
+  #evnt_circle {
+    display: none;
+  }
+
+  .center{
+    right: 30%;
+    width: auto;
+    height: 35%;
+    top: 32.5%;
+  }
+
+  .c_img{
+    width: auto;
+    height: 100%;
+  }
+
+  .center_txt{
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  /* sides */
+  .sides_mob{
+    background: transparent;
+    position: absolute;
+    right: 37.5%;
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+    top: 0%;
+  }
+
+  #side1{
+    opacity: 1;
+    top: 0;
+    left:auto;
+  }
+
+  #side2{
+    opacity: 1;
+    top: 15%;
+    right: 5%;
+    left: auto;
+  }
+
+  #side3{
+    opacity: 1;
+    top: 15%;
+    left: 5%;
+  }
+
+  #side4{
+    opacity: 1;
+    bottom: 15%;
+    right: 5%;
+    top:auto;
+    left:auto;
+  }
+
+  #side5{
+    opacity: 1;
+    top: auto;
+    bottom: 0;
+    left: auto;
+  }
+
+  #side6{
+    opacity: 1;
+    top: auto;
+    left: 5%;
+    bottom: 15%;
+  }
+
+
+
   #header {
     height: 100%;
     width: auto;

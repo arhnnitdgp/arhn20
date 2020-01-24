@@ -11,47 +11,39 @@ document.onmousemove = function() {
 
 // events animation
 const animateBadge = () => {
-  TweenMax.to("#side1", 1, {
-    left: "-30px",
-    opacity: 1,
-    ease: Power2.easeInOut
-  });
-  TweenMax.to("#side2", 1, {
-    left: "-30px",
-    opacity: 1,
-    ease: Power2.easeInOut
-  });
-  TweenMax.to("#side3", 1, {
-    left: "-30px",
-    opacity: 1,
-    ease: Power2.easeInOut
-  });
-  TweenMax.to("#side4", 1, {
-    left: "-30px",
-    opacity: 1,
-    ease: Power2.easeInOut
-  });
-  TweenMax.to("#side5", 1, {
-    left: "-30px",
-    opacity: 1,
-    ease: Power2.easeInOut
-  });
-  TweenMax.to("#side6", 1, {
-    left: "-30px",
-    opacity: 1,
-    ease: Power2.easeInOut
-  });
-  console.log("anim1 done");
-};
-
-const rotateBadge = () => {
-  console.log("anim2 start");
-  TweenLite.defaultEase = Linear.easeNone;
-
-  var tl = new TimelineMax({ repeat: -1 });
-
-  //   tl.to(".rad", 5, { rotation: 360, transformOrigin: "right" });
-  //   tl.to(".sides", 5, { rotation: -360 }, 0);
+  if(window.screen.width > 480){
+    TweenMax.to("#side1", 1, {
+      left: "-30px",
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+    TweenMax.to("#side2", 1, {
+      left: "-30px",
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+    TweenMax.to("#side3", 1, {
+      left: "-30px",
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+    TweenMax.to("#side4", 1, {
+      left: "-30px",
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+    TweenMax.to("#side5", 1, {
+      left: "-30px",
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+    TweenMax.to("#side6", 1, {
+      left: "-30px",
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+    console.log("anim1 done");
+  }
 };
 
 
