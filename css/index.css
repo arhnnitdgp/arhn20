@@ -1,3 +1,7 @@
+body{
+  font-family: 'Catamaran', sans-serif;
+}
+
 /* landing */
 #header {
 	width: 100vw;
@@ -113,24 +117,51 @@
 
 /* events */
 .center {
-  background-color: aliceblue;
+  background: transparent;
   position: absolute;
-  right: 50%;
-  width: 10vw;
-  height: 10vw;
+  right: 45%;
+  width: 15vw;
+  height: 15vw;
   border-radius: 50%;
   z-index: 10;
-  top: 30%;
+  top: 20%;
+}
+
+.center_txt {
+  position: absolute;
+  top: 33%;
+  background: white;
+  width: 100%;
+  text-align: center;
+  padding: 1vh 0;
+  letter-spacing: 5px;
 }
 
 .sides {
-  background-color: beige;
+  background: transparent;
   position: absolute;
   right: 50vw;
-  width: 100px;
-  height: 100px;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
   top: 30%;
+}
+
+.side_txt{
+  text-align: center;
+  /* background-color: aliceblue; */
+  margin: 0;
+  opacity: 0;
+  transition: ease-in 0.5s;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.side_txt:hover{
+  opacity: 1;
+  transform: translateY(30%);
 }
 
 #evnt_circle{
@@ -142,48 +173,51 @@
 }
 
 /* events circle rad */
+.c_img, .s_img {
+  width: 100%;
+}
+
 .rad {
-  background-color: black;
   height: 0;
-  width: 10vw;
+  width: 20vw;
   z-index: 5;
   position: relative;
 }
 
 #rad1 {
   transform: rotateZ(27deg);
-  left: 35.8vw;
-  top: 4.4%;
+  left: 2%;
+  top: 32%;
 }
 
 #rad2 {
   transform: rotateZ(90deg);
-  left: 40.9vw;
-  top: -0.5%;
+  left: 20%;
+  top: 13%;
 }
 
 #rad3 {
   transform: rotateZ(-34deg);
-  left: 36vw;
-  top: 13%;
+  left: 3%;
+  top: 67%;
 }
 
 #rad4 {
   transform: rotateZ(-90deg);
-  left: 40.9vw;
-  top: 19%;
+  left: 20%;
+  top: 82%;
 }
 
 #rad5 {
   transform: rotateZ(208deg);
-  left: 45.5vw;
-  top: 13.4%;
+  left: 38%;
+  top: 63%;
 }
 
 #rad6 {
   transform: rotateZ(-214deg);
-  left: 45vw;
-  top: 3%;
+  left: 37%;
+  top: 25%;
 }
 
 #side1,
@@ -193,7 +227,7 @@
 #side5,
 #side6 {
   opacity: 0;
-  top: -50px;
+  top: -5vw;
   left: 200px;
 }
 
