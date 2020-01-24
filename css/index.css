@@ -1,37 +1,35 @@
-body{
-  font-family: 'Catamaran', sans-serif;
+body {
+  font-family: "Catamaran", sans-serif;
 }
 
 /* landing */
 #header {
-	width: 100vw;
-    height: 100vh;
-    position: relative;
-    z-index: 0;
-  
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
 }
 
-#front-wave{
-	position:absolute;
-	z-index:10;
-	top:0;
+#front-wave {
+  position: absolute;
+  z-index: 10;
+  top: 0;
 }
-#front-wave-img{
-	height: auto;
-	width: 100vw;
+#front-wave-img {
+  height: auto;
+  width: 100vw;
 }
 
 /* eye container */
-#eye-container{
+#eye-container {
   position: absolute;
   z-index: 1;
   right: 43%;
   bottom: 0;
 }
-#eye-container-img{
-	height: 95vh;
+#eye-container-img {
+  height: 95vh;
 }
-
 
 /* eye */
 .eyes {
@@ -40,7 +38,7 @@ body{
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
-  z-index:2;
+  z-index: 2;
   top: 51%;
 }
 .eye {
@@ -82,7 +80,7 @@ body{
 
 /* navigation */
 #navigation {
-	display:none;
+  display: none;
   position: fixed;
   top: 0;
   height: 9vh;
@@ -147,24 +145,29 @@ body{
   top: 30%;
 }
 
-.side_txt{
+.side_txt {
   text-align: center;
-  /* background-color: aliceblue; */
+  background-color: aliceblue;
   margin: 0;
-  opacity: 0;
   transition: ease-in 0.5s;
+  /* padding-bottom: 100%; */
+}
+
+.txt_div {
+  height: 100%;
+  opacity: 0;
   position: absolute;
-  top: 0;
   width: 100%;
-  padding-bottom: 100%;
+  top: 0;
+  transition: ease-in 0.5s;
 }
 
-.side_txt:hover{
+.txt_div:hover {
   opacity: 1;
-  transform: translateY(30%);
+  padding-top: 35%;
 }
 
-#evnt_circle{
+#evnt_circle {
   height: 50%;
   width: 50%;
   position: absolute;
@@ -173,7 +176,8 @@ body{
 }
 
 /* events circle rad */
-.c_img, .s_img {
+.c_img,
+.s_img {
   width: 100%;
 }
 
@@ -232,9 +236,11 @@ body{
 }
 
 /* events */
-#evnt_back{
+#evnt_back {
   position: relative;
   z-index: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #evnt_back img {
@@ -242,7 +248,7 @@ body{
 }
 
 /* contact us */
-#cntct_us{
+#cntct_us {
   position: relative;
   width: 100vw;
 }
@@ -252,82 +258,77 @@ body{
 }
 
 /* about */
-#about-us{
-	position:relative;
-	z-index:10;
-	width: 100vw;
-    height: auto;
+#about-us {
+  position: relative;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
-#about-handle{
-	position:absolute;
-	z-index:20;
-	top:0;
+#about-handle {
+  position: absolute;
+  z-index: 20;
+  top: 0;
 }
-#about-us-img{
-	width: 100%;
-    height: auto;
-    
+#about-us-img {
+  width: 100%;
+  height: auto;
 }
-#about-handle-img{
-	height: 90vh;
-	/* width: 100vw; */
+#about-handle-img {
+  height: 90vh;
+  /* width: 100vw; */
 }
 
 #txt-2 {
   position: absolute;
   z-index: 55;
-  top: 23vh;
+  top: 5vh;
   width: 30vw;
   color: white;
   right: 5vw;
   font-size: 1.2em;
 }
 
-
 @media only screen and (max-width: 600px) {
   #header {
-    height:100%;
-	width:auto;
+    height: 100%;
+    width: auto;
   }
-  #front-wave{
-	height:100%;
-	width:auto;
-	top:unset;
-	bottom:0;
-  }
-	
-	#front-wave-img{
-	height:100%;
-	width:auto;
-	}
-  #eye-container{
-	top: unset;
-    bottom: -4px;
-  }
-  #eye-container-img{
-	height: auto;
-	width: 22vw;
-	bottom:-10%;
-	}
-  #about-us{
-	height:100%;
-	width:auto;
+  #front-wave {
+    height: 100%;
+    width: auto;
+    top: unset;
+    bottom: 0;
   }
 
-   #about-handle{
-	
-	
-	}
-	#about-us-img{
-	height: 100vh;
-    width: auto;		
-	}
-	#about-handle-img{
-	
-	}
-	.eyes{
-		display:none;
-	}
-	
+  #front-wave-img {
+    height: 100%;
+    width: auto;
+  }
+  #eye-container {
+    top: unset;
+    bottom: -4px;
+  }
+  #eye-container-img {
+    height: auto;
+    width: 22vw;
+    bottom: -10%;
+  }
+  #about-us {
+    height: 100%;
+    width: auto;
+  }
+
+  #about-handle {
+  }
+  #about-us-img {
+    height: 100vh;
+    width: auto;
+  }
+  #about-handle-img {
+  }
+  .eyes {
+    display: none;
+  }
 }
