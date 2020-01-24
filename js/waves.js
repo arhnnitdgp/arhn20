@@ -18,7 +18,7 @@ var self = window;
 		canvas.height = innerHeight;
 		
 		canvas.style.position = 'absolute';
-		canvas.style.top = 0;
+		canvas.style.top = "10vh";
 		canvas.style.bottom = 0;
 		canvas.style.left = 0;
 		canvas.style.right = 0;
@@ -180,7 +180,7 @@ var self = window;
 			wave1.push({
 				
 				x: canvas.width * quantity / (len - 1),
-				y: canvas.height * 0.5 - 20,
+				y: canvas.height * 0.5 - 30,
 				vy: Math.random() * 10,
 				
 				depth: canvas.height * 0.5
