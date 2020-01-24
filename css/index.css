@@ -290,6 +290,16 @@ body {
   font-size: 1.2em;
 }
 
+.contact-us{
+  position: absolute; 
+  z-index: 55; 
+  top: 20%; 
+  left: 20%; 
+  color: white; 
+  font-size: 1.2em;
+}
+
+
 @media only screen and (max-width: 600px) {
   #header {
     height: 100%;
@@ -320,15 +330,43 @@ body {
     width: auto;
   }
 
-  #about-handle {
+   #about-handle{
+	
+	
+	}
+	#about-us-img{
+	height: 100vh;
+    width: auto;		
+	}
+	#about-handle-img{
+	
+	}
+	.eyes{
+		display:none;
   }
-  #about-us-img {
-    height: 100vh;
-    width: auto;
+  
+  #cntct_us img{
+    height:100vh;
+    width:auto;
+    float: right;
   }
-  #about-handle-img {
+  .contact-us{
+    top: unset; 
+    left: unset;
+    text-align: center;
+    margin-top: 30vh;
   }
-  .eyes {
-    display: none;
+  #txt-2 {
+    
+    top: 7vh;
+    width: 100vw;
+    color: white;
+    right: unset;
+    font-size: 1.05em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    font-size: 1.05em;
+    text-align: center;
   }
+	
 }
