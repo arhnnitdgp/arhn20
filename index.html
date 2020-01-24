@@ -61,10 +61,12 @@
         <div id="fullpage">
             <!-- landing 1 -->
             <div class="section " id="landing">
-
-                <!-- <img id="header" src="img/Aarohan-2019-Header.png" alt="arhn2020" /> -->
                 <img id="header" src="img/a4png.png" alt="arhn2020" />
-
+                <img id="mob_head" src="img/arhn_header.png" alt="arhn2020">
+                <!-- txt 1 -->
+                <h1 id="head-txt-1">AAR</h1>
+                <!-- txt 2 -->
+                <h1 id="head-txt-2">HAN</h1>
                 <!-- eye -->
                 <div id="eye-container">
                     <img id="eye-container-img" src="img/a2.png" alt="arhn2020" />
@@ -332,14 +334,20 @@
     el.style.right = rt + "px";
     eye.style.right = rt + "px";
     eye.style.width = ell + "px";
+    console.log(rt)
 
     //contact page style
     var abtel = document.getElementById("about-handle");
     var abtell = abtel.offsetWidth;
     var abtrt = (win - abtell) / 2;
     abtel.style.right = abtrt + "px";
-    console.log(abtell);
-    console.log(abtrt);
+
+    // landing header style
+    var landtxt1 = document.getElementById("head-txt-1");
+    landtxt1.style.width = rt + "px";
+    var landtxt2 = document.getElementById("head-txt-2");
+    landtxt2.style.width = rt + "px";
+
 </script>
 
 </html>

@@ -3,11 +3,34 @@ body {
 }
 
 /* landing */
+#head-txt-1 {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  font-size: 15vw;
+  letter-spacing: 3vw;
+  text-align: right;
+}
+
+#head-txt-2 {
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  font-size: 15vw;
+  letter-spacing: 3vw;
+  text-align: left;
+}
+
+#mob_head {
+  display: none;
+}
+
 #header {
   width: 100vw;
   height: 100vh;
   position: relative;
   z-index: 0;
+  overflow: hidden;
 }
 
 #front-wave {
@@ -167,7 +190,7 @@ body {
   padding-top: 35%;
 }
 
-#evnt_circle_mobile{
+#evnt_circle_mobile {
   display: none;
 }
 
@@ -298,12 +321,12 @@ body {
   font-size: 1.2em;
 }
 
-.contact-us{
-  position: absolute; 
-  z-index: 55; 
-  top: 20%; 
-  left: 20%; 
-  color: white; 
+.contact-us {
+  position: absolute;
+  z-index: 55;
+  top: 20%;
+  left: 20%;
+  color: white;
   font-size: 1.2em;
 }
 
@@ -314,11 +337,24 @@ body {
   height: 100vh;
   z-index: 1;
   overflow: visible;
-  background: rgb(104, 208, 138) url('../img/load.gif') no-repeat center center;
+  background: rgb(104, 208, 138) url("../img/load.gif") no-repeat center center;
 }
 
-
 @media only screen and (max-width: 600px) {
+  /* landing */
+  #mob_head {
+    display: block;
+    position: absolute;
+    top: 57%;
+    width: 60vw;
+    left: 5vw;
+  }
+
+  #head-txt-1 , #head-txt-2 {
+    display: none;
+  }
+
+  /* event badges */
   #evnt_circle_mobile {
     display: block;
     width: 100%;
@@ -332,25 +368,36 @@ body {
     display: none;
   }
 
-  .center{
+  .center {
     right: 30%;
     width: auto;
     height: 35%;
     top: 32.5%;
   }
 
-  .c_img{
+  .c_img {
     width: auto;
     height: 100%;
   }
 
-  .center_txt{
+  .center_txt {
     font-size: 1.3em;
     font-weight: bold;
   }
 
-  /* sides */
-  .sides_mob{
+  /* event txt */
+  .txt_div {
+    opacity: 1;
+    top: -5vh;
+  }
+
+  .side_txt {
+    background-color: transparent;
+    color: white;
+  }
+
+  /* event sides */
+  .sides_mob {
     background: transparent;
     position: absolute;
     right: 37.5%;
@@ -360,53 +407,53 @@ body {
     top: 0%;
   }
 
-  #side1{
+  #side1 {
     opacity: 1;
     top: 0;
-    left:auto;
+    left: auto;
   }
 
-  #side2{
+  #side2 {
     opacity: 1;
     top: 15%;
     right: 5%;
     left: auto;
   }
 
-  #side3{
+  #side3 {
     opacity: 1;
     top: 15%;
     left: 5%;
   }
 
-  #side4{
+  #side4 {
     opacity: 1;
     bottom: 15%;
     right: 5%;
-    top:auto;
-    left:auto;
+    top: auto;
+    left: auto;
   }
 
-  #side5{
+  #side5 {
     opacity: 1;
     top: auto;
     bottom: 0;
     left: auto;
   }
 
-  #side6{
+  #side6 {
     opacity: 1;
     top: auto;
     left: 5%;
     bottom: 15%;
   }
 
-
-
   #header {
     height: 100%;
     width: auto;
   }
+
+  /* wave */
   #front-wave {
     height: 100%;
     width: auto;
@@ -418,48 +465,53 @@ body {
     height: 100%;
     width: auto;
   }
+
+  /* eye */
   #eye-container {
-    top: unset;
-    bottom: -4px;
+    bottom: -2vh;
+    right: -17vw !important;
   }
+
   #eye-container-img {
-    height: auto;
-    width: 22vw;
-    bottom: -10%;
+    height: 70vh;
   }
+
+  .eyes {
+    display: none;
+  }
+
+  /* about us */
   #about-us {
     height: 100%;
     width: auto;
   }
 
-   #about-handle{
-	
-	
-	}
-	#about-us-img{
-	height: 100vh;
-    width: auto;		
-	}
-	#about-handle-img{
-	
-	}
-	.eyes{
-		display:none;
+  #about-us-img {
+    height: 100vh;
+    width: auto;
   }
-  
-  #cntct_us img{
-    height:100vh;
-    width:auto;
-    float: right;
+
+  #about-handle {
+    right: -104vw !important;
   }
-  .contact-us{
-    top: unset; 
+
+  #about-handle-img {
+    height: 70vh;
+  }
+
+  /* contact us */
+  #cntct_us img {
+    height: 100vh;
+    width: auto;
+    right: 0;
+  }
+  .contact-us {
+    top: unset;
     left: unset;
     text-align: center;
     margin-top: 30vh;
   }
   #txt-2 {
-    
     top: 7vh;
     width: 100vw;
     color: white;
@@ -470,5 +522,4 @@ body {
     font-size: 1.05em;
     text-align: center;
   }
-	
 }
