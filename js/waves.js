@@ -172,7 +172,7 @@ var self = window;
 	
 	function createWaves() {
 	
-		var totalPoints = Math.round(canvas.width / 170);
+		var totalPoints = Math.round(canvas.width / 300);
 	
 		for(var quantity = 0, len = totalPoints; quantity < len; quantity++)
 				
@@ -181,7 +181,7 @@ var self = window;
 				
 				x: canvas.width * quantity / (len - 1),
 				y: canvas.height * 0.5 - 20,
-				vy: Math.random() * 5,
+				vy: Math.random() * 10,
 				
 				depth: canvas.height * 0.5
 				
@@ -194,7 +194,7 @@ var self = window;
 				
 				x: canvas.width * quantity / (len - 1),
 				y: canvas.height * 0.5,
-				vy: Math.random() * 5,
+				vy: Math.random() * 10,
 				
 				depth: canvas.height * 0.5
 				
@@ -207,7 +207,7 @@ var self = window;
 				
 				x: canvas.width * quantity / (len - 1),
 				y: canvas.height * 0.5 + 20,
-				vy: Math.random() * 5,
+				vy: Math.random() * 10,
 				
 				depth: canvas.height * 0.5
 				
