@@ -23,7 +23,7 @@ var self = window;
 		canvas.style.left = 0;
 		canvas.style.right = 0;
 		canvas.style.zIndex = 5;
-		canvas.style.cursor = 'n-resize';
+		// canvas.style.cursor = 'n-resize';
        
         body.appendChild(canvas);
 		
@@ -359,7 +359,7 @@ var self = window;
 			
 			context.save();
 			context.globalAlpha = 0.5;
-			context.fillStyle = '#05cdf8';
+			context.fillStyle = '#65cb86';
 			context.beginPath();
 			
 			context.moveTo(wave3[0].x, wave3[0].y);
