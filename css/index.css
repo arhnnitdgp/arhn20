@@ -115,11 +115,12 @@
 .center {
   background-color: aliceblue;
   position: absolute;
-  right: 49vw;
+  right: 50%;
   width: 10vw;
   height: 10vw;
   border-radius: 50%;
   z-index: 10;
+  top: 30%;
 }
 
 .sides {
@@ -129,6 +130,15 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  top: 30%;
+}
+
+#evnt_circle{
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  bottom: 25%;
+  right: 25%;
 }
 
 /* events circle rad */
@@ -143,37 +153,37 @@
 #rad1 {
   transform: rotateZ(27deg);
   left: 35.8vw;
-  top: 4.4vh;
+  top: 4.4%;
 }
 
 #rad2 {
   transform: rotateZ(90deg);
   left: 40.9vw;
-  top: -0.5vh;
+  top: -0.5%;
 }
 
 #rad3 {
   transform: rotateZ(-34deg);
   left: 36vw;
-  top: 13vh;
+  top: 13%;
 }
 
 #rad4 {
   transform: rotateZ(-90deg);
   left: 40.9vw;
-  top: 19vh;
+  top: 19%;
 }
 
 #rad5 {
   transform: rotateZ(208deg);
   left: 45.5vw;
-  top: 13.4vh;
+  top: 13.4%;
 }
 
 #rad6 {
   transform: rotateZ(-214deg);
   left: 45vw;
-  top: 3vh;
+  top: 3%;
 }
 
 #side1,
