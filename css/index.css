@@ -101,14 +101,15 @@ body {
 .social_links {
   z-index: 5;
   position: fixed;
-  left: 4rem;
-  bottom: 4rem;
+  left: 2rem;
+  bottom: 2rem;
   text-align: center;
 }
 
 .social_links i {
-  margin-top: 1.5rem;
-  font-size: 2rem;
+  margin-top: 0.7em;
+  font-size: 1.4em;
+  color: black;
 }
 
 /* navigation */
