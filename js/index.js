@@ -11,7 +11,7 @@ document.onmousemove = function() {
 
 // events animation
 const animateBadge = () => {
-  if(window.screen.width > 480){
+  if (window.screen.width > 480) {
     TweenMax.to("#side1", 1, {
       left: "-30px",
       opacity: 1,
@@ -46,19 +46,18 @@ const animateBadge = () => {
   }
 };
 
+//social icons color change
+const iconChange = () => {
+  for (var i = 1; i < 5; i++) {
+    var icons = document.getElementById("icn" + i);
+    icons.style.color = "white";
+  }
+};
 
-// // hover animation
-// const onHover = (id) =>{
-//   console.log("mouse hover");
-//   var iid = "#"+id;
-//   console.log(iid);
-//   TweenMax.to("#side_txt2",1,{
-//     opacity: 1,
-//     transform: "translateY(10%)",
-//     ease: Power2.easeInOut
-//   })
-// }
-
-// // var side = document.getElementsByClassName("sides");
-// document.getElementById("side2").addEventListener("mouseover", onHover("side_txt2"));
-
+//social icons color change
+const iconChange2 = () => {
+  for (var i = 1; i < 5; i++) {
+    var icons = document.getElementById("icn" + i);
+    icons.style.color = "black";
+  }
+};

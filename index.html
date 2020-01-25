@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Aarohan 2020</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+        integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -25,7 +28,6 @@
     <!-- loader  -->
     <div id="loader"></div>
 
-    <!-- nav bar -->
     <div id="content">
         <!-- <nav id="navigation">
             <ul>
@@ -71,10 +73,11 @@
 
         <!-- Social Links -->
         <div id="social_icons" class="social_links">
-            <a href="https://www.facebook.com/arhn.nitd/"><i class="fab fa-facebook-square"></i></a></br>
-            <a href="https://www.instagram.com/arhn.nitd/"><i class="fa fa-icon fa-instagram"></i></a></br>
-            <a href="https://twitter.com/aarohan_nitdgp?lang=en"><i class="fa fa-icon fa-twitter"></i></a></br>
-            <a href="https://www.youtube.com/user/arhnNITD"><i class="fa fa-icon fa-youtube-play"></i></a></br>
+            <a href="https://www.facebook.com/arhn.nitd/"><i id="icn1" class="fab fa-facebook-square"></i></a></br>
+            <a href="https://www.instagram.com/arhn.nitd/"><i id="icn2" class="fab fa-instagram"></i></a></br>
+            <a href="https://twitter.com/aarohan_nitdgp?lang=en"><i id="icn3"
+                    class="fab fa-twitter-square"></i></a></br>
+            <a href="https://www.youtube.com/user/arhnNITD"><i id="icn4" class="fab fa-youtube"></i></a></br>
         </div>
 
         <!-- fullpage div -->
@@ -96,12 +99,9 @@
                         <div class="ball"></div>
                     </div>
                 </div>
+                <!-- waves -->
                 <div id="waves">
-
                 </div>
-                <!-- <div id="front-wave">
-                <img id="front-wave-img" src="assets/landing/a1.png" alt="arhn2020" />
-            </div> -->
             </div>
 
             <!-- about us 2 -->
@@ -249,6 +249,9 @@
                 <div id="evnt_back">
                     <img src="img/workshop.png" />
                 </div>
+                <div class="workshop-div">
+                    <img src="img/WORKSHOP1.png" alt="workshop">
+                </div>
             </div>
 
             <!-- major attractions 5 -->
@@ -333,13 +336,19 @@
                 // events animation
                 animateBadge()
             }
+            else if (origin.anchor == 'home' && direction == 'down') {
+                iconChange()
+            }
+            else if (destination.anchor == 'home' && direction == 'up') {
+                iconChange2()
+            }
         },
 
         //animation onload
         afterLoad: function (origin, destination, direction) {
             if (destination.anchor == 'event') {
-                 // events animation
-                animateBadge()       
+                // events animation
+                animateBadge()
             }
         }
     });
