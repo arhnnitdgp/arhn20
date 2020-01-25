@@ -24,7 +24,7 @@
 <body>
     <!-- loader  -->
     <div id="loader"></div>
-    
+
     <!-- nav bar -->
     <div id="content">
         <nav id="navigation">
@@ -301,7 +301,6 @@
             "#4BBFC3",
             "#7BAABE",
             "#1bbc9b",
-            "#4BBFC3",
             "#7BAABE",
         ],
         //Navigation
@@ -314,14 +313,25 @@
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
 
-        // animation afterload
-        afterLoad: function (origin, destination, direction) {
+        // animation afterleaving prev section
+        onLeave: function (origin, destination, direction) {
             var loadedSection = this;
-
             //using anchorLink
             if (origin.anchor == 'aboutus' && direction == 'down') {
                 // events animation
                 animateBadge()
+            }
+            else if (origin.anchor == 'workshops' && direction == 'up') {
+                // events animation
+                animateBadge()
+            }
+        },
+
+        //animation onload
+        afterLoad: function (origin, destination, direction) {
+            if (destination.anchor == 'event') {
+                 // events animation
+                animateBadge()       
             }
         }
     });
