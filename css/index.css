@@ -2,6 +2,11 @@ body {
   font-family: "Catamaran", sans-serif;
 }
 
+@font-face {
+  font-family: Muller;
+  src: url("..fonts/Muller/MullerNarrowDemo-ExtraBold.otf");
+}
+
 /* loader gif */
 #loader {
   position: absolute;
@@ -20,6 +25,7 @@ body {
   font-size: 15vw;
   letter-spacing: 3vw;
   text-align: right;
+  font-family: Muller;
 }
 
 #head-txt-2 {
@@ -29,6 +35,7 @@ body {
   font-size: 15vw;
   letter-spacing: 3vw;
   text-align: left;
+  font-family: Muller;
 }
 
 #mob_head {
