@@ -4,7 +4,7 @@ body {
 
 @font-face {
   font-family: Muller;
-  src: url("..fonts/Muller/MullerNarrowDemo-ExtraBold.otf");
+  src: url("../fonts/Muller/MullerNarrowDemo-ExtraBold.otf");
 }
 
 /* loader gif */
