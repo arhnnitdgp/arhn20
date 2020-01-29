@@ -499,10 +499,12 @@ body {
     right: 0;
   }
   .contact-us {
-    top: unset;
-    left: unset;
     text-align: center;
-    margin-top: 30vh;
+    top: 14%;
+    left: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 11vh;
   }
   #txt-2 {
     top: 7vh;
