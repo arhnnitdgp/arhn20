@@ -307,20 +307,45 @@ body {
 }
 
 /* workshop */
-/*.workshop-div{
-  position: absolute;
-  z-index: 5;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}*/
 .workshop-div{
   position: absolute;
   z-index: 5;
-  top: 18%;
+  top: 14%;
   left: 5%;
   width: 100%;
   height: 100%;
+}
+
+.workshop-img{
+  height: auto;
+  width: 30vw;
+}
+.workshop-title{
+  color: white;
+}
+.workshop-name1{
+ display: inline;
+ padding-left: 13%;
+ /* padding-right: 13%; */
+}
+.workshop-name2{
+  display: inline;
+  padding-left: 23%;
+  /* padding-right: 13%; */
+}
+.workshop-name3{
+  display: inline;
+  padding-left: 20%;
+  /* padding-right: 8%; */
+}
+.workshop-name{
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.workshop-mob{
+  display: none;
 }
 
 /* contact us */
@@ -332,7 +357,15 @@ body {
   color: white;
   font-size: 1.2em;
 }
-
+@media only screen and (min-width: 1760px) {
+  .workshop-name3{
+    display: inline;
+    padding-left: 25%;    
+  }
+  .workshop-mob{
+    display: none;
+  }
+}
 @media only screen and (max-width: 600px) {
   /* landing */
   #mob_head {
@@ -387,6 +420,7 @@ body {
   .side_txt {
     background-color: transparent;
     color: white;
+    font-size: 1rem;
   }
 
   /* event sides */
@@ -518,10 +552,27 @@ body {
     text-align: center;
   }
   .workshop-img{
-    height:32vh;
+    height: 22vh;
     width: auto;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  .workshop-name{
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: 1rem;
+  }
+  .workshop-name1{
+    padding-left: 40%;
+    padding-right: 40%;
+  }
+  .workshop-name2{
+    padding-left: 37%;
+    padding-right: 37%;
+  }
+  .workshop-name3{
+    padding-left: 33%;
+    padding-right: 33%;
   }
   .workshop-div{
     position: absolute;
@@ -530,6 +581,15 @@ body {
     left: unset;
     width: 100%;
     height: 100%;
+  }
+  .workshop-title{
+    text-align: center;
+  }
+  .workshop-not-mob{
+    display: none;
+  }
+  .workshop-mob{
+    display: inline;
   }
 }
 
