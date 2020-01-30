@@ -52,6 +52,15 @@ body {
   overflow: hidden;
 }
 
+#arhn_header {
+  position: absolute;
+  left: 5rem;
+  top: 2rem;
+  z-index: 100;
+  display: block;
+  cursor: pointer;
+}
+
 #front-wave {
   position: absolute;
   z-index: 10;
@@ -374,6 +383,10 @@ body {
     top: 57%;
     width: 60vw;
     left: 5vw;
+  }
+
+  #arhn_header {
+    display: none;
   }
 
   #head-txt-1 , #head-txt-2 {
