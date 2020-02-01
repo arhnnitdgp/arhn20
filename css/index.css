@@ -410,6 +410,28 @@ body {
     left: 5vw;
   }
 
+  .nitd-black{
+    left: 9vw;
+    top: 21vh;
+  }
+
+  .nitd-black img{
+    width: 25vw;
+  }
+
+  .title-sponsor{
+    left: 40vw;
+    top: 20vh;
+  }
+
+  .title-sponsor img{
+    width: 25vw;
+  }
+
+  .title-sponsor h1{
+    display: block;
+  }
+
   #arhn_header {
     display: none;
   }
