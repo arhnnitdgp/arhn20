@@ -61,7 +61,7 @@ body {
 
 #head-txt-1 {
   position: absolute;
-  top: 10vh;
+  top: 30vh;
   left: 0;
   font-size: 15vw;
   letter-spacing: 3vw;
@@ -71,7 +71,7 @@ body {
 
 #head-txt-2 {
   position: absolute;
-  top: 10vh;
+  top: 30vh;
   right: 0;
   font-size: 15vw;
   letter-spacing: 3vw;
@@ -398,6 +398,23 @@ body {
   left: 20%;
   color: white;
   font-size: 1.2em;
+  width: 55vw;
+  height: 55vh;
+  background-color: white;
+  opacity: 0.2;
+  padding-left: 7%;
+}
+
+/* ath */
+.ath-heading{
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+.about__info-text h2{
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 600px) {
@@ -407,7 +424,7 @@ body {
     position: absolute;
     top: 57%;
     width: 60vw;
-    left: 5vw;
+    left: 10vw;
   }
 
   .nitd-black{
@@ -599,6 +616,7 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 11vh;
+    width: 80vw;
   }
   #txt-2 {
     top: 7vh;
@@ -647,6 +665,25 @@ body {
   .workshop-mob{
     display: inline;
   }
+
+  /* ath */
+  .aavni{
+    position: absolute;
+    right: -20vw;
+  }
+
+  .aavni img{
+    opacity: 0.6;
+  }
+
+  .ath-heading{
+    font-size: 1.5em;
+  }
+  .about__info-text h2{
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
 }
 
 
