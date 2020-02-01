@@ -20,6 +20,45 @@ body {
 }
 
 /* landing */
+.nitd-black {
+  display: inline-block;
+  position: absolute;
+  width: auto;
+  left: 20vw;
+  top: 15vh;
+  text-align: right;
+  padding-right: 1vw;
+  z-index: 5;
+}
+
+.nitd-black img {
+  width: 7vw;
+  height: auto;
+}
+
+.title-sponsor {
+  display: inline-block;
+  position: absolute;
+  width: auto;
+  left: 29vw;
+  top: 12vh;
+  text-align: right;
+  z-index: 5;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+}
+
+.title-sponsor img {
+  width: 7vw;
+  height: auto;
+  padding-top: 2vh;
+}
+
+.title-sponsor h1{
+  display: inline;
+  font-size: 1.5em;
+}
+
 #head-txt-1 {
   position: absolute;
   top: 10vh;
