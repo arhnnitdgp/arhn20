@@ -956,3 +956,7 @@ Animation keyframes
     background-position-y: 18%;
   }
 }
+
+.contact-links{
+	text-decoration:none;
+}
