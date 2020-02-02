@@ -124,13 +124,8 @@
             <!-- landing 1 -->
             <div class="section " id="landing">
                 <img id="header" src="img/a4png.png" alt="arhn2020" />
-                <img id="mob_head" src="img/arhn_header.png" alt="arhn2020">
 
                 <!-- title sponsor -->
-                <div class="nitd-black">
-                    <img src="./img/nitdlogo_black.png">
-                    <h1 style="display:inline">&</h1>
-                </div>
                 <div class="title-sponsor">
                     <img src="img/HN Logo_Final.png">
                     <h1>presents</h1>
@@ -140,6 +135,8 @@
                 <h1 id="head-txt-1">AAR</h1>
                 <!-- txt 2 -->
                 <h1 id="head-txt-2">HAN</h1>
+                <!-- mobile txt -->
+                <p class="mob-head" id="mob-head">AAROHAN</p>
                 <!-- eye -->
                 <div id="eye-container">
                     <img id="eye-container-img" src="img/a2.png" alt="arhn2020" />
@@ -358,8 +355,8 @@
                     <h1 class="ath-heading">ACCOMODATION, TRAVEL & HOSPITALITY</h1>
 
                     <div class="row">
-                        <div class="col-sm-4 offset-lg-1 aavni" style="background-color: #fad587;">
-                            <img class="ath_img" src="img/mascot.png" style="height: 80vh;">
+                        <div class="col-sm-3 offset-lg-2 aavni" style="background-color: #fad587;">
+                            <img class="ath_img" src="img/mascot.png" >
                         </div>
                         <div class="col-sm-5" style="background-color: #fad587;">
                             <div class="about__info-text" style="padding-top: 7vh;">
@@ -428,6 +425,7 @@
 <!-- fullpage options -->
 <script type="text/javascript">
     var myFullpage = new fullpage("#fullpage", {
+        licenseKey: 'YOUR_KEY_HERE',
         sectionsColor: [
             "#1bbc9b",
             "#131414",
@@ -500,6 +498,11 @@
     var landtxt2 = document.getElementById("head-txt-2");
     landtxt2.style.width = rt + "px";
 
+    // mob arhn txt style
+    var landtxt_mob = document.getElementById("mob-head");
+    var landtxtell = landtxt_mob.offsetWidth;
+    var landrt = (win - landtxtell) / 2;
+    landtxt_mob.style.right = landrt + "px";
 </script>
 
 </html>
