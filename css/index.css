@@ -420,11 +420,22 @@ h1{
   text-align: center;
   color: white;
   font-weight: 700;
+  padding: 5vh 0;
 }
 
 .about__info-text h2{
   font-size: 1.5em;
   font-weight: 700;
+}
+
+.aavni img{
+  height: 70vh;
+}
+
+.about__info-text p{
+  font-size: 1.1em;
+  line-height: 1.4em;
+  padding-right: 5vw;
 }
 
 @media only screen and (max-width: 600px) {

@@ -42,7 +42,6 @@ const animateBadge = () => {
       opacity: 1,
       ease: Power2.easeInOut
     });
-    console.log("anim1 done");
   }
 };
 
