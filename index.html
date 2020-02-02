@@ -153,6 +153,8 @@
                 <h1 id="head-txt-2">HAN</h1>
                 <!-- mobile txt -->
                 <p class="mob-head" id="mob-head">AAROHAN</p>
+                <!-- date -->
+                <h1 class="date" id="date">7 8 9 10<br>FEBRUARY</h1>
                 <!-- eye -->
                 <div id="eye-container">
                     <img id="eye-container-img" src="img/a2.png" alt="arhn2020" />
@@ -541,10 +543,15 @@
     landtxt2.style.width = rt + "px";
 
     // mob arhn txt style
-    var landtxt_mob = document.getElementById("mob-head");
-    var landtxtell = landtxt_mob.offsetWidth;
-    var landrt = (win - landtxtell) / 2;
-    landtxt_mob.style.right = landrt + "px";
+    // var landtxt_mob = document.getElementById("mob-head");
+    // var landtxtell = landtxt_mob.offsetWidth;
+    // var landrt = (win - landtxtell) / 2;
+    // landtxt_mob.style.right = landrt + "px";
+
+    // date
+    var land_date = document.getElementById("date");
+    land_date.style.left = rt +"px";
+    land_date.style.width = ell +"px";
 </script>
 
 </html>
