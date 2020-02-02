@@ -69,3 +69,10 @@ $('.overlay-navigation').click(function() {
     nav_item_5.removeClass('slide-in-nav-item-delay-4').addClass('slide-in-nav-item-delay-4-reverse');
   }
 })
+
+$(document).ready(function () {
+  $(".hamburger").click(function () {
+    $(this).toggleClass("is-active");
+  });
+});
+

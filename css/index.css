@@ -1121,3 +1121,92 @@ Animation keyframes
 .contact-links{
 	text-decoration:none;
 }
+
+.hamburger {
+  z-index: 2000;
+  font-size: 30px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 4rem;
+}
+
+.hamburger .line {
+  width: 2.7rem;
+  height: 0.4rem;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 0.5rem auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.black-menu .line {
+  background-color: black;
+}
+
+.white-menu .line {
+  background-color: white;
+}
+
+.black-menu2 .line {
+  background-color: black;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger-11 {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-11.is-active {
+  animation: smallbig 0.6s forwards;
+}
+
+@keyframes smallbig {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+}
+
+#hamburger-11.is-active .line:nth-child(1),
+#hamburger-11.is-active .line:nth-child(2),
+#hamburger-11.is-active .line:nth-child(3) {
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+#hamburger-11.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-11.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(0.91rem) rotate(45deg);
+  -ms-transform: translateY(0.91rem) rotate(45deg);
+  -o-transform: translateY(0.91rem) rotate(45deg);
+  transform: translateY(0.91rem) rotate(45deg);
+}
+
+#hamburger-11.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-0.91rem) rotate(-45deg);
+  -ms-transform: translateY(-0.91rem) rotate(-45deg);
+  -o-transform: translateY(-0.91rem) rotate(-45deg);
+  transform: translateY(-0.91rem) rotate(-45deg);
+}
