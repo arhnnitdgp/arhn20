@@ -76,3 +76,7 @@ $(document).ready(function () {
   });
 });
 
+var menuopt = $(".overlay-navigation");
+menuopt.click(function () {
+  $(".hamburger").toggleClass("is-active");
+});

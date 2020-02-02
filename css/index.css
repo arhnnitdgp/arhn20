@@ -1110,6 +1110,9 @@ Animation keyframes
   border-bottom: 1px solid #fff;
 }
 @media (max-width: 640px) {
+  nav ul {
+    flex-direction: column;
+  }
   nav ul li a {
     font-size: 11px;
   }
