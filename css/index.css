@@ -12,7 +12,7 @@ body {
   font-family: "Muller-thin", sans-serif;
 }
 
-h1{
+h1 {
   font-size: 2em;
 }
 
@@ -23,13 +23,13 @@ h1{
   height: 100vh;
   z-index: 55555;
   overflow: hidden;
-  background: rgb(104, 208, 138) url("../img/load.gif") no-repeat ;
+  background: rgb(104, 208, 138) url("../img/load.gif") no-repeat;
   background-position-x: 35%;
   background-position-y: 18%;
 }
 
 /* landing */
-.patron{
+.patron {
   position: absolute;
   width: 22vw;
   height: auto;
@@ -37,7 +37,7 @@ h1{
   right: 7vw;
 }
 
-.date{
+.date {
   position: absolute;
   top: 68vh;
   width: 100vw;
@@ -48,7 +48,7 @@ h1{
   text-align: center;
 }
 
-.mob-head{
+.mob-head {
   display: none;
   color: white;
   position: absolute;
@@ -96,7 +96,7 @@ h1{
   padding-top: 2vh;
 }
 
-.title-sponsor h1{
+.title-sponsor h1 {
   display: inline;
   font-size: 1.5em;
 }
@@ -393,7 +393,7 @@ h1{
 }
 
 /* workshop */
-.workshop-div{
+.workshop-div {
   position: absolute;
   z-index: 5;
   top: 0;
@@ -402,7 +402,7 @@ h1{
   padding-top: 12vh;
 }
 
-#images_cont{
+#images_cont {
   margin-top: 3vh;
   text-align: center;
   display: flex;
@@ -410,19 +410,19 @@ h1{
   justify-content: space-evenly;
 }
 
-.workshop-img{
+.workshop-img {
   height: auto;
   width: 20vw;
   padding: 0 2.5vw;
 }
 
-.workshop-title{
+.workshop-title {
   color: white;
   text-align: center;
   font-size: 2em;
 }
 
-.workshop-name{
+.workshop-name {
   color: white;
   text-align: center;
   font-size: 1.5rem;
@@ -445,28 +445,35 @@ h1{
 }
 
 /* ath */
-.ath-box{
+.ath-box {
   position: absolute;
   top: 0;
 }
 
-.ath-heading{
+.ath-heading {
   text-align: center;
   color: white;
   font-weight: 700;
   padding: 5vh 0;
 }
 
-.about__info-text h2{
+.ath-txt {
+  background-color: #52532859;
+  color: white;
+  border-radius: 10px;
+  padding-left: 3vw;
+}
+
+.about__info-text h2 {
   font-size: 1.5em;
   font-weight: 700;
 }
 
-.aavni img{
+.aavni img {
   height: 80vh;
 }
 
-.about__info-text p{
+.about__info-text p {
   font-size: 1.1em;
   line-height: 1.4em;
   padding-right: 5vw;
@@ -474,39 +481,39 @@ h1{
 
 @media only screen and (max-width: 600px) {
   /* landing */
-  .date{
+  .date {
     top: 80vh;
     font-size: 1.5em;
     color: white;
-    left: 0!important;
-    width: 100vw!important;
+    left: 0 !important;
+    width: 100vw !important;
   }
 
   #mob-head {
     display: block;
   }
 
-  .nitd-black{
+  .nitd-black {
     left: 15vw;
     top: 23vh;
     display: none;
   }
 
-  .nitd-black img{
+  .nitd-black img {
     width: 20vw;
   }
 
-  .title-sponsor{
+  .title-sponsor {
     left: 36vw;
     top: 20vh;
     text-align: left;
   }
 
-  .title-sponsor img{
+  .title-sponsor img {
     width: 25vw;
   }
 
-  .title-sponsor h1{
+  .title-sponsor h1 {
     display: block;
   }
 
@@ -514,11 +521,12 @@ h1{
     display: none;
   }
 
-  #head-txt-1 , #head-txt-2 {
+  #head-txt-1,
+  #head-txt-2 {
     display: none;
   }
 
-  .patron{
+  .patron {
     top: 4vh;
     width: 65vw;
     right: 30vw;
@@ -637,7 +645,7 @@ h1{
     width: auto;
   }
 
-  .waves{
+  .waves {
     display: none;
   }
 
@@ -702,23 +710,23 @@ h1{
   }
 
   /* workshop */
-  #images_cont{
+  #images_cont {
     display: block;
     margin: 0;
   }
-  
-  .workshop-img{
+
+  .workshop-img {
     height: 18vh;
     width: auto;
     padding-left: 30%;
     padding-right: 30%;
   }
-  .workshop-name{
+  .workshop-name {
     padding-left: 30%;
     padding-right: 30%;
     font-size: 1rem;
   }
-  .workshop-div{
+  .workshop-div {
     position: absolute;
     z-index: 5;
     top: 0;
@@ -727,43 +735,48 @@ h1{
     height: 100%;
     padding: 0;
   }
-  .workshop-title{
+  .workshop-title {
     text-align: center;
   }
-  .workshop-not-mob{
+  .workshop-not-mob {
     display: none;
   }
-  .workshop-mob{
+  .workshop-mob {
     display: inline;
   }
 
   /* ath */
-  .aavni{
+  .aavni {
     position: absolute;
     right: -20vw;
     display: none;
   }
 
-  .aavni img{
+  .aavni img {
     opacity: 0.6;
   }
 
-  .ath-heading{
+  .ath-heading {
     font-size: 1.5em;
-    padding: 0;
+    padding: 6vh 0;
   }
-  .about__info-text h2{
+  .about__info-text h2 {
     font-size: 1.5em;
     font-weight: 700;
   }
 
-  .about__info-text{
-    padding: 0!important;
+  .about__info-text {
+    padding: 0 !important;
   }
 
+  .ath-txt {
+    margin: 0 4vw;
+  }
+
+  .ath-no-mob{
+    display: none;
+  }
 }
-
-
 
 /* ====================================
 Navigation 
@@ -781,13 +794,13 @@ Navigation
 }
 
 .overlay-slide-down {
-  transition: all .4s ease-in-out;
-  transform: translateY(0)
+  transition: all 0.4s ease-in-out;
+  transform: translateY(0);
 }
 
 .overlay-slide-up {
-  transition: all .8s ease-in-out;
-  transform: translateY(-100%)
+  transition: all 0.8s ease-in-out;
+  transform: translateY(-100%);
 }
 
 nav,
@@ -817,7 +830,7 @@ nav li a {
   top: 46%;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Work sans', sans-serif;
+  font-family: "Work sans", sans-serif;
   font-weight: 300;
   letter-spacing: 4px;
   text-decoration: none;
@@ -827,7 +840,7 @@ nav li a {
 }
 
 nav li a:before {
-  content: '';
+  content: "";
   width: 70px;
   height: 2px;
   background-color: #fff;
@@ -837,13 +850,13 @@ nav li a:before {
   z-index: 100;
   transform: translateX(-100%);
   opacity: 0;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 nav li a:after {
   content: attr(data-content);
   font-size: 0.7rem;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   opacity: 0;
   position: absolute;
   z-index: 100;
@@ -855,7 +868,7 @@ nav li a:after {
   right: 0;
   bottom: -50px;
   text-transform: none;
-  font-family: 'Open sans', serif;
+  font-family: "Open sans", serif;
   font-weight: 300;
   font-style: italic;
   letter-spacing: 0;
@@ -871,26 +884,36 @@ nav li a:hover:after {
   opacity: 1;
 }
 
-nav li:nth-of-type(1){background-color: #536d3b}
-nav li:nth-of-type(2){background-color: #51372c}
-nav li:nth-of-type(3){background-color: #98b168}
-nav li:nth-of-type(4){background-color: #394a38}
-nav li:nth-of-type(5){background-color: #192123}
+nav li:nth-of-type(1) {
+  background-color: #536d3b;
+}
+nav li:nth-of-type(2) {
+  background-color: #51372c;
+}
+nav li:nth-of-type(3) {
+  background-color: #98b168;
+}
+nav li:nth-of-type(4) {
+  background-color: #394a38;
+}
+nav li:nth-of-type(5) {
+  background-color: #192123;
+}
 
 .slide-in-nav-item {
-  animation: slide-in-nav-item 0.4s linear 1 .2s both;
+  animation: slide-in-nav-item 0.4s linear 1 0.2s both;
 }
 
 .slide-in-nav-item-delay-1 {
-  animation: slide-in-nav-item 0.4s linear 1 .4s both;
+  animation: slide-in-nav-item 0.4s linear 1 0.4s both;
 }
 
 .slide-in-nav-item-delay-2 {
-  animation: slide-in-nav-item 0.4s linear 1 .6s both;
+  animation: slide-in-nav-item 0.4s linear 1 0.6s both;
 }
 
 .slide-in-nav-item-delay-3 {
-  animation: slide-in-nav-item 0.4s linear 1 .8s both;
+  animation: slide-in-nav-item 0.4s linear 1 0.8s both;
 }
 
 .slide-in-nav-item-delay-4 {
@@ -898,25 +921,24 @@ nav li:nth-of-type(5){background-color: #192123}
 }
 
 .slide-in-nav-item-reverse {
-  animation: slide-in-nav-item-reverse .3s linear 1 .5s both;
+  animation: slide-in-nav-item-reverse 0.3s linear 1 0.5s both;
 }
 
 .slide-in-nav-item-delay-1-reverse {
-  animation: slide-in-nav-item-reverse .3s linear 1 .4s both;
+  animation: slide-in-nav-item-reverse 0.3s linear 1 0.4s both;
 }
 
 .slide-in-nav-item-delay-2-reverse {
-  animation: slide-in-nav-item-reverse .3s linear 1 .3s both;
+  animation: slide-in-nav-item-reverse 0.3s linear 1 0.3s both;
 }
 
 .slide-in-nav-item-delay-3-reverse {
-  animation: slide-in-nav-item-reverse .3s linear 1 .2s both;
+  animation: slide-in-nav-item-reverse 0.3s linear 1 0.2s both;
 }
 
 .slide-in-nav-item-delay-4-reverse {
-  animation: slide-in-nav-item-reverse .3s linear 1 both;
+  animation: slide-in-nav-item-reverse 0.3s linear 1 both;
 }
-
 
 /* ====================================
 Burger king
@@ -941,29 +963,28 @@ Burger king
 }
 
 .animate-top-bar {
-  animation: animate-top-bar .6s linear 1 both
+  animation: animate-top-bar 0.6s linear 1 both;
 }
 
 .animate-bottom-bar {
-  animation: animate-bottom-bar .6s linear 1 both
+  animation: animate-bottom-bar 0.6s linear 1 both;
 }
 
 .animate-middle-bar {
-  animation: animate-middle-bar .6s linear 1 both
+  animation: animate-middle-bar 0.6s linear 1 both;
 }
 
 .animate-out-top-bar {
-  animation: animate-out-top-bar .6s linear 1 both
+  animation: animate-out-top-bar 0.6s linear 1 both;
 }
 
 .animate-out-bottom-bar {
-  animation: animate-out-bottom-bar .6s linear 1 both
+  animation: animate-out-bottom-bar 0.6s linear 1 both;
 }
 
 .animate-out-middle-bar {
-  animation: animate-out-middle-bar .6s linear 1 both
+  animation: animate-out-middle-bar 0.6s linear 1 both;
 }
-
 
 /* ====================================
 Animation keyframes
@@ -972,22 +993,22 @@ Animation keyframes
 @keyframes slide-in-nav-item {
   from {
     -webkit-transform: translateY(-100%);
-    transform: translateY(-100%)
+    transform: translateY(-100%);
   }
   to {
     -webkit-transform: translateY(0);
-    transform: translateY(0)
+    transform: translateY(0);
   }
 }
 
 @keyframes slide-in-nav-item-reverse {
   from {
     -webkit-transform: translateY(0);
-    transform: translateY(0)
+    transform: translateY(0);
   }
   to {
     -webkit-transform: translateY(-100%);
-    transform: translateY(-100%)
+    transform: translateY(-100%);
   }
 }
 
@@ -997,17 +1018,17 @@ Animation keyframes
   }
   50% {
     -webkit-transform: translateY(9px);
-    transform: translateY(9px)
+    transform: translateY(9px);
   }
   80% {
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
-    background-color: #fff
+    background-color: #fff;
   }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #29363B;
+    background-color: #29363b;
   }
 }
 
@@ -1017,7 +1038,7 @@ Animation keyframes
   }
   50% {
     -webkit-transform: translateY(-9px);
-    transform: translateY(-9px)
+    transform: translateY(-9px);
   }
   80% {
     -webkit-transform: translateY(-5px);
@@ -1027,7 +1048,7 @@ Animation keyframes
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #29363B;
+    background-color: #29363b;
   }
 }
 
@@ -1039,62 +1060,62 @@ Animation keyframes
     background-color: #fff;
   }
   100% {
-    background-color: #29363B;
+    background-color: #29363b;
   }
 }
 
 @keyframes animate-out-top-bar {
   0% {
-    background-color: #29363B
+    background-color: #29363b;
   }
   50% {
     -webkit-transform: translateY(9px);
-    transform: translateY(9px)
+    transform: translateY(9px);
   }
   80% {
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
-    background-color: #29363B
+    background-color: #29363b;
   }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #FFF;
+    background-color: #fff;
   }
 }
 
 @keyframes animate-out-bottom-bar {
   0% {
-    background-color: #29363B
+    background-color: #29363b;
   }
   50% {
     -webkit-transform: translateY(-9px);
-    transform: translateY(-9px)
+    transform: translateY(-9px);
   }
   80% {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    background-color: #29363B;
+    background-color: #29363b;
   }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #FFF;
+    background-color: #fff;
   }
 }
 
 @keyframes animate-out-middle-bar {
   0% {
-    background-color: #29363B
+    background-color: #29363b;
   }
   80% {
-    background-color: #29363B;
+    background-color: #29363b;
   }
   100% {
     background-color: #fff;
   }
 }
-.home a{
+.home a {
   font-family: "Work Sans", sans-serif;
   color: #fff;
   font-weight: 300;
@@ -1103,8 +1124,8 @@ Animation keyframes
   text-decoration: none;
   position: absolute;
   z-index: 10;
-  top:50px;
-  left:50px;
+  top: 50px;
+  left: 50px;
   padding-bottom: 3px;
   border-bottom: 1px solid #fff;
 }
@@ -1130,8 +1151,8 @@ Animation keyframes
   }
 }
 
-.contact-links{
-	text-decoration:none;
+.contact-links {
+  text-decoration: none;
 }
 
 .hamburger {
