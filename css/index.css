@@ -394,11 +394,10 @@ h1{
 }
 
 .workshop-name{
-  color: white;
+  color:#fff;
   text-align: center;
   font-size: 1.5rem;
 }
-
 /* contact us */
 .contact-us {
   position: absolute;
@@ -1075,3 +1074,6 @@ Animation keyframes
 .contact-links{
 	text-decoration:none;
 }
+
+
+
