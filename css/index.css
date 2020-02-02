@@ -29,6 +29,39 @@ h1{
 }
 
 /* landing */
+.patron{
+  position: absolute;
+  width: 22vw;
+  height: auto;
+  top: 2vh;
+  right: 7vw;
+}
+
+.date{
+  position: absolute;
+  top: 68vh;
+  width: 100vw;
+  font-family: Muller;
+  letter-spacing: 4px;
+  z-index: 555;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.mob-head{
+  display: none;
+  color: white;
+  position: absolute;
+  z-index: 55;
+  top: 40vh;
+  font-family: Muller;
+  font-size: 4em;
+  text-align: center;
+  line-height: 1em;
+  letter-spacing: 6px;
+  width: 100vw;
+}
+
 .nitd-black {
   display: inline-block;
   position: absolute;
@@ -86,10 +119,6 @@ h1{
   letter-spacing: 3vw;
   text-align: left;
   font-family: Muller;
-}
-
-#mob_head {
-  display: none;
 }
 
 #header {
@@ -430,6 +459,11 @@ h1{
 }
 
 /* ath */
+.ath-box{
+  position: absolute;
+  top: 0;
+}
+
 .ath-heading{
   text-align: center;
   color: white;
@@ -443,7 +477,7 @@ h1{
 }
 
 .aavni img{
-  height: 70vh;
+  height: 80vh;
 }
 
 .about__info-text p{
@@ -454,26 +488,32 @@ h1{
 
 @media only screen and (max-width: 600px) {
   /* landing */
-  #mob_head {
+  .date{
+    top: 80vh;
+    font-size: 1.5em;
+    color: white;
+    left: 0!important;
+    width: 100vw!important;
+  }
+
+  #mob-head {
     display: block;
-    position: absolute;
-    top: 57%;
-    width: 60vw;
-    left: 10vw;
   }
 
   .nitd-black{
-    left: 9vw;
-    top: 21vh;
+    left: 15vw;
+    top: 23vh;
+    display: none;
   }
 
   .nitd-black img{
-    width: 25vw;
+    width: 20vw;
   }
 
   .title-sponsor{
-    left: 40vw;
+    left: 36vw;
     top: 20vh;
+    text-align: left;
   }
 
   .title-sponsor img{
@@ -490,6 +530,12 @@ h1{
 
   #head-txt-1 , #head-txt-2 {
     display: none;
+  }
+
+  .patron{
+    top: 4vh;
+    width: 65vw;
+    right: 30vw;
   }
 
   /* event badges */
@@ -605,10 +651,14 @@ h1{
     width: auto;
   }
 
+  .waves{
+    display: none;
+  }
+
   /* eye */
   #eye-container {
     bottom: -2vh;
-    right: -17vw !important;
+    /* right: -17vw !important; */
   }
 
   #eye-container-img {
@@ -630,9 +680,9 @@ h1{
     width: auto;
   }
 
-  #about-handle {
+  /* #about-handle {
     right: -104vw !important;
-  }
+  } */
 
   #about-handle-img {
     height: 70vh;
@@ -719,10 +769,15 @@ h1{
 
   .ath-heading{
     font-size: 1.5em;
+    padding: 0;
   }
   .about__info-text h2{
     font-size: 1.5em;
     font-weight: 700;
+  }
+
+  .about__info-text{
+    padding: 0!important;
   }
 
 }
@@ -889,7 +944,7 @@ Burger king
 .open-overlay {
   position: absolute;
   right: 5rem;
-  top: 3.2rem;
+  top: 1.5rem;
   z-index: 100;
   width: 34px;
   display: block;
@@ -898,7 +953,7 @@ Burger king
 
 .open-overlay span {
   display: block;
-  height: 1px;
+  height: 3px;
   background-color: #fff;
   cursor: pointer;
   margin-top: 8px;
@@ -1104,12 +1159,12 @@ Animation keyframes
   position: fixed;
   right: 0;
   top: 0;
-  margin: 4rem;
+  margin: 2.5rem;
 }
 
 .hamburger .line {
   width: 2.7rem;
-  height: 0.4rem;
+  height: 5px;
   background-color: #ecf0f1;
   display: block;
   margin: 0.5rem auto;
