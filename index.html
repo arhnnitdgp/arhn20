@@ -131,8 +131,11 @@
         <div id="fullpage">
             <!-- landing 1 -->
             <div class="section " id="landing">
+                <!-- header -->
                 <img id="header" src="img/a4png.png" alt="arhn2020" />
-                <img id="mob_head" src="img/arhn_header.png" alt="arhn2020">
+
+                <!-- patrons -->
+                <img class="patron" src="img/patron.png" alt="patron">
 
                 <!-- title sponsor -->
                 <div class="nitd-black">
@@ -148,6 +151,10 @@
                 <h1 id="head-txt-1">AAR</h1>
                 <!-- txt 2 -->
                 <h1 id="head-txt-2">HAN</h1>
+                <!-- mobile txt -->
+                <p class="mob-head" id="mob-head">AAROHAN</p>
+                <!-- date -->
+                <h1 class="date" id="date">7 8 9 10<br>FEBRUARY</h1>
                 <!-- eye -->
                 <div id="eye-container">
                     <img id="eye-container-img" src="img/a2.png" alt="arhn2020" />
@@ -426,21 +433,22 @@
 
             <!-- accomodation, travel and hospitality 7 -->
             <div class="section" id="accomodation">
+                <div id="cntct_us">
+                    <img src="img/ath.png" alt="ath">
+                </div>
                 <div class="container-fluid ath-box">
                     <h1 class="ath-heading">ACCOMODATION, TRAVEL & HOSPITALITY</h1>
 
                     <div class="row">
-                        <div class="col-sm-4 offset-lg-1 aavni" style="background-color: #fad587;">
-                            <img class="ath_img" src="img/mascot.png" style="height: 80vh;">
-                        </div>
-                        <div class="col-sm-5" style="background-color: #fad587;">
-                            <div class="about__info-text" style="padding-top: 7vh;">
+                        <div class="col-sm-6 offset-lg-3" style="background-color: #525328b5;
+                        color: white;border-radius: 10px;padding-left: 3vw;">
+                            <div class="about__info-text" style="padding-top: 5vh;">
                                 <p class="sep-half">
                                     <h2>ACCOMODATION</h2>
                                     <p>An accomodation fee of ₹200 and an additional caution fee of ₹100 has be will be required at the time of registration. The caution money will be refunded at the time of departure provided the beddings provided are not tampered or missing.</p>
                                 </p>
                             </div>
-                            <div class="about__info-text">
+                            <div class="about__info-text" style="padding: 1vh 0;">
                                 <p class="sep-half">
                                     <h2>TRAVEL</h2>
                                     <p>Durgapur is very well connected by rail and road to almost all parts of the
@@ -449,7 +457,7 @@
                                         Durgapur station to the institute campus.</p>
                                 </p>
                             </div>
-                            <div class="about__info-text">
+                            <div class="about__info-text" style="padding-bottom: 5vh;">
                                 <p class="sep-half">
                                     <h2>HOSPITALITY</h2>
                                     <p>Apart from your accomodation & travel, there are multiple food joints in and
@@ -496,6 +504,7 @@
 <!-- fullpage options -->
 <script type="text/javascript">
     var myFullpage = new fullpage("#fullpage", {
+        licenseKey: 'YOUR_KEY_HERE',
         sectionsColor: [
             "#1bbc9b",
             "#131414",
