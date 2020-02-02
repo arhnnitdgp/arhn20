@@ -31,10 +31,10 @@ h1{
 /* landing */
 .mob-head{
   color: whitesmoke;
-  color: rgba(255, 255, 255, .1);
+  color: rgb(98, 106, 90);
   position: absolute;
   z-index: 55;
-  top: 61vh;
+  top: 45vh;
   left: 5vw;
   font-family: Muller;
   font-size: 4em;
@@ -44,7 +44,7 @@ h1{
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  background-image: url('../img/water_image.png');
+  background-image: url(../img/water_image.png);
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   animation: animate 15s linear infinite;
@@ -493,6 +493,7 @@ h1{
   .nitd-black{
     left: 15vw;
     top: 23vh;
+    display: none;
   }
 
   .nitd-black img{
@@ -500,8 +501,9 @@ h1{
   }
 
   .title-sponsor{
-    left: 40vw;
-    top: 20vh;
+    left: 36vw;
+    top: 25vh;
+    text-align: left;
   }
 
   .title-sponsor img{
@@ -1128,12 +1130,12 @@ Animation keyframes
   position: fixed;
   right: 0;
   top: 0;
-  margin: 4rem;
+  margin: 2.5rem;
 }
 
 .hamburger .line {
   width: 2.7rem;
-  height: 0.4rem;
+  height: 5px;
   background-color: #ecf0f1;
   display: block;
   margin: 0.5rem auto;
