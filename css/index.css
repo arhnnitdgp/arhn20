@@ -445,6 +445,11 @@ h1{
 }
 
 /* ath */
+.ath-box{
+  position: absolute;
+  top: 0;
+}
+
 .ath-heading{
   text-align: center;
   color: white;
@@ -745,10 +750,15 @@ h1{
 
   .ath-heading{
     font-size: 1.5em;
+    padding: 0;
   }
   .about__info-text h2{
     font-size: 1.5em;
     font-weight: 700;
+  }
+
+  .about__info-text{
+    padding: 0!important;
   }
 
 }
