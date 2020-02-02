@@ -1085,12 +1085,12 @@ Animation keyframes
   position: fixed;
   right: 0;
   top: 0;
-  margin: 4rem;
+  margin: 3rem;
 }
 
 .hamburger .line {
   width: 2.7rem;
-  height: 0.4rem;
+  height: 0.2rem;
   background-color: #ecf0f1;
   display: block;
   margin: 0.5rem auto;
