@@ -410,7 +410,7 @@ h1{
   width: 55vw;
   height: 55vh;
   background-color: white;
-  opacity: 0.2;
+  opacity: 0.8;
   padding-left: 7%;
   border-radius: 10px;
 }
@@ -659,7 +659,7 @@ h1{
   }
   
   .workshop-img{
-    height: 22vh;
+    height: 18vh;
     width: auto;
     padding-left: 30%;
     padding-right: 30%;
@@ -692,6 +692,7 @@ h1{
   .aavni{
     position: absolute;
     right: -20vw;
+    display: none;
   }
 
   .aavni img{
