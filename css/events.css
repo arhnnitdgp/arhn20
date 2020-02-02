@@ -203,7 +203,7 @@ a.off {
 }
 
 .s-blue {
-	background-color: var(--blue)
+	background-color: #51372c;
 }
 
 .s-blue,
@@ -214,7 +214,7 @@ a.off {
 
 .s-red,
 .s-red-black {
-	background-color: var(--red)
+	background-color: #536d3b;
 }
 
 .s-red-black {
