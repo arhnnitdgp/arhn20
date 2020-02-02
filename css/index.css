@@ -29,6 +29,14 @@ h1{
 }
 
 /* landing */
+.patron{
+  position: absolute;
+  width: 22vw;
+  height: auto;
+  top: 2vh;
+  right: 7vw;
+}
+
 .mob-head{
   color: whitesmoke;
   color: rgb(98, 106, 90);
