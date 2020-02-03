@@ -717,27 +717,37 @@ h1{
 
   /* workshop */
   #images_cont{
+    all: unset;
     /* display: block; */
     margin: 0;
+  }
+  #images_cont>a{
+    text-decoration: none;
   }
   #images_cont2{
     /* display: block; */
     margin: 0;
   }
-  
+  .div-in-wksp{
+    display: inline;
+  }
   
   .workshop-img{
+    all: unset;
     height: 18vh;
     width: auto;
     /* padding-left: 30%;
     padding-right: 30%; */
   }
   .workshop-name{
-    padding-left: 30%;
-    padding-right: 30%;
+    all: unset;
+    /* padding-left: 30%;
+    padding-right: 30%; */
+    color: white;
     font-size: 1rem;
   }
   .workshop-div{
+    all: unset;
     position: absolute;
     z-index: 5;
     top: 0;
@@ -753,7 +763,7 @@ h1{
     display: none;
   }
   .workshop-mob{
-    display: block;
+    display: inline;
   }
 
   /* ath */
