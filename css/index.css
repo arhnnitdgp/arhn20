@@ -499,6 +499,28 @@ h1 {
   padding-right: 5vw;
 }
 
+/* Major Attractions */
+.mjr-attr{
+  padding-top: 6em;
+  font-size: 3em;
+  text-align: center;
+  font-weight: 800;
+}
+.caro-img{
+  width: auto;
+  height: 70vh;
+}
+.carousel-caption{
+  background-color: #98b168;
+  border-radius: 9px;
+  color: #000;
+  opacity: 0.9;
+}
+@media only screen and (min-height: 720px) {
+  .mjr-attr{
+    padding-top: 33rem;    
+  }
+}
 @media only screen and (max-width: 600px) {
   /* landing */
   .date {
@@ -828,7 +850,36 @@ h1 {
   .ath-no-mob {
     display: none;
   }
+
+  /* Major Attractions */
+  .mjr-attr{
+    padding-top: 10rem;    
+    font-size: 3em;
+  }
+  .slides{
+    margin-top: -57%;
+  }
+  .carousel-indicators{
+    margin-bottom: 55%;
+  }
+  .caro-img{
+    width: unset;
+    height: unset;
+  }
+  .carousel-caption{
+    color: #000;
+    opacity: 0.9;
+    font-size: 0.5rem;
+  }
+  .mjr-attr-title{
+    margin-top: -6%;
+  }
+  .mjr-attr-about{
+    margin-bottom: unset;
+  }
 }
+
+
 
 /* ====================================
 Navigation 
