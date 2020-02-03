@@ -152,8 +152,10 @@ h1 {
 #eye-container {
   position: absolute;
   z-index: 1;
-  right: 43%;
+  /* right: 43%; */
   bottom: 0;
+  /* width: 100%;
+  text-align: center; */
 }
 #eye-container-img {
   height: 95vh;
