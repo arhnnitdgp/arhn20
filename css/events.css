@@ -1298,9 +1298,8 @@ body.notouch {
   
   .scroll-downs {
 	position: absolute;
-	top: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 2vh;
 	left: 0;
 	margin: auto;
 	
