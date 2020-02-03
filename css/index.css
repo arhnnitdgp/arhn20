@@ -402,20 +402,14 @@ h1 {
   padding-top: 15vh;
 }
 
-<<<<<<< HEAD
 #images_cont{
   margin-top: 10vh;
-=======
-#images_cont {
-  margin-top: 3vh;
->>>>>>> 6cccd823705521c8ed0468601112ce88ee0f4d58
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-<<<<<<< HEAD
 #images_cont2{
   margin-top: 10vh;
   text-align: center;
@@ -425,9 +419,6 @@ h1 {
 }
 
 .workshop-img{
-=======
-.workshop-img {
->>>>>>> 6cccd823705521c8ed0468601112ce88ee0f4d58
   height: auto;
   width: 20vw;
   padding: 0 2.5vw;
