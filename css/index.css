@@ -27,6 +27,9 @@ h1 {
   background-position-x: 35%;
   background-position-y: 18%;
 }
+.land-text{
+  font-family: "Muller-thin", sans-serif;
+}
 
 /* landing */
 .patron {
@@ -681,6 +684,14 @@ h1 {
   }
 
   /* about us */
+  .about-mob-box{
+    background-color: #98b168;
+    opacity: 0.9;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 14px;
+    padding-top: 4%;
+  }
   #about-us {
     height: 100%;
     width: auto;
