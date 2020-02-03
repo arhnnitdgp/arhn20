@@ -393,6 +393,9 @@ h1 {
 }
 
 /* workshop */
+.reduce-gap{
+  margin-left: -5%;
+}
 .workshop-div {
   position: absolute;
   z-index: 5;
@@ -724,6 +727,9 @@ h1 {
   }
 
   /* workshop */
+  .reduce-gap{
+    margin-left: unset;
+  }
   .div-out-wksp{
     margin-top: 7%;
   }
