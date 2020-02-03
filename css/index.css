@@ -500,6 +500,23 @@ h1 {
   padding-left: 7%;
   border-radius: 10px;
 }
+/*sponsors*/
+.sponsor
+{
+  position: absolute;
+  z-index: 55;
+  top: 25%;
+  left: 20%;
+  color: white;
+  font-size: 1.2em;
+  width: 65vw;
+  height: 50vh;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 30px;
+}
+
+
 
 /* ath */
 .ath-box {
@@ -1322,3 +1339,5 @@ Animation keyframes
   -o-transform: translateY(-0.91rem) rotate(-45deg);
   transform: translateY(-0.91rem) rotate(-45deg);
 }
+
+

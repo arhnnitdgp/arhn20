@@ -10,8 +10,11 @@ a {
   }
   
   .previous {
-	background-color: #f1f1f1;
-	color: black;
+	background-color: #000;
+	color: white;
+	
+	margin-left: -110%;
+    margin-top: -40%;
   }
   
   .next {
