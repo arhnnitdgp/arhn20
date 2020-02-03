@@ -724,6 +724,9 @@ h1 {
   }
 
   /* workshop */
+  .div-out-wksp{
+    margin-top: 7%;
+  }
   #images_cont{
     all: unset;
     /* display: block; */
@@ -738,6 +741,8 @@ h1 {
   }
   .div-in-wksp{
     display: inline;
+    margin-right: 3%;
+    margin-left: 3%;
   }
   
   .workshop-img{
@@ -758,7 +763,7 @@ h1 {
     all: unset;
     position: absolute;
     z-index: 5;
-    top: 0;
+    top: 7%;
     left: unset;
     width: 100%;
     height: 100%;
@@ -766,7 +771,7 @@ h1 {
   }
   .workshop-title {
     text-align: center;
-    margin-bottom: 33%;
+    margin-bottom: 25%;
   }
   .workshop-not-mob {
     display: none;
