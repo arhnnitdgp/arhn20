@@ -1,41 +1,3 @@
-.scroll-downs {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  
-  width :34px;
-  height: 55px;
-}
-.mousey {
-  transform:rotate(90deg);
-  width: 3px;
-  padding: 10px 15px;
-  height: 35px;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  opacity: 0.75;
-  box-sizing: content-box;
-}
-.scroller {
-  width: 3px;
-  height: 10px;
-  border-radius: 25%;
-  background-color: #fff;
-  animation-name: scroll;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-  animation-iteration-count: infinite;
-}
-@keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
-}
-
-
 @font-face {
   font-family: Muller;
   src: url("../fonts/Muller/MullerNarrowDemo-ExtraBold.otf");
@@ -190,10 +152,8 @@ h1 {
 #eye-container {
   position: absolute;
   z-index: 1;
-  /* right: 43%; */
+  right: 43%;
   bottom: 0;
-  /* width: 100%;
-  text-align: center; */
 }
 #eye-container-img {
   height: 95vh;
@@ -442,7 +402,7 @@ h1 {
   padding-top: 15vh;
 }
 
-#images_cont{
+#images_cont {
   margin-top: 10vh;
   text-align: center;
   display: flex;
@@ -450,7 +410,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-#images_cont2{
+#images_cont2 {
   margin-top: 10vh;
   text-align: center;
   display: inline;
@@ -458,7 +418,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-.workshop-img{
+.workshop-img {
   height: auto;
   width: 20vw;
   padding: 0 2.5vw;
@@ -470,20 +430,15 @@ h1 {
   font-size: 2em;
 }
 
-.workshop-name{
-  color:#fff;
-  text-align: center;
-  font-size: 1.5rem;
-}
 .workshop-name {
   color: white;
   text-align: center;
   font-size: 1.5rem;
 }
-.div-out-wksp>a{
+.div-out-wksp > a {
   text-decoration: none;
 }
-#images_cont2>a{
+#images_cont2 > a {
   text-decoration: none;
 }
 
@@ -769,42 +724,42 @@ h1 {
   }
 
   /* workshop */
-  .div-out-wksp{
+  .div-out-wksp {
     margin-top: 7%;
   }
-  #images_cont{
+  #images_cont {
     all: unset;
     /* display: block; */
     margin: 0;
   }
-  #images_cont>a{
+  #images_cont > a {
     text-decoration: none;
   }
-  #images_cont2{
+  #images_cont2 {
     /* display: block; */
     margin: 0;
   }
-  .div-in-wksp{
+  .div-in-wksp {
     display: inline;
     margin-right: 3%;
     margin-left: 3%;
   }
-  
-  .workshop-img{
+
+  .workshop-img {
     all: unset;
     height: 18vh;
     width: auto;
     /* padding-left: 30%;
     padding-right: 30%; */
   }
-  .workshop-name{
+  .workshop-name {
     all: unset;
     /* padding-left: 30%;
     padding-right: 30%; */
     color: white;
     font-size: 1rem;
   }
-  .workshop-div{
+  .workshop-div {
     all: unset;
     position: absolute;
     z-index: 5;
@@ -853,7 +808,7 @@ h1 {
     margin: 0 4vw;
   }
 
-  .ath-no-mob{
+  .ath-no-mob {
     display: none;
   }
 }
@@ -1231,12 +1186,6 @@ Animation keyframes
   }
 }
 
-.contact-links{
-	text-decoration:none;
-}
-
-
-
 .contact-links {
   text-decoration: none;
 }
@@ -1247,10 +1196,11 @@ Animation keyframes
   position: fixed;
   right: 0;
   top: 0;
-  margin: 2.5rem;
+  margin: 2rem;
 }
 
 .hamburger .line {
+  border-radius: 10px;
   width: 2.7rem;
   height: 5px;
   background-color: #ecf0f1;
