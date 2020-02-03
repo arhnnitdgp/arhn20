@@ -405,7 +405,7 @@ h1 {
   padding-top: 15vh;
 }
 
-#images_cont{
+#images_cont {
   margin-top: 10vh;
   text-align: center;
   display: flex;
@@ -413,7 +413,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-#images_cont2{
+#images_cont2 {
   margin-top: 10vh;
   text-align: center;
   display: inline;
@@ -421,7 +421,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-.workshop-img{
+.workshop-img {
   height: auto;
   width: 20vw;
   padding: 0 2.5vw;
@@ -438,10 +438,10 @@ h1 {
   text-align: center;
   font-size: 1.5rem;
 }
-.div-out-wksp>a{
+.div-out-wksp > a {
   text-decoration: none;
 }
-#images_cont2>a{
+#images_cont2 > a {
   text-decoration: none;
 }
 
@@ -715,7 +715,7 @@ h1 {
     width: 80vw;
   }
   #txt-2 {
-    top: 7vh;
+    top: 15vh;
     width: auto;
     color: white;
     right: unset;
@@ -733,39 +733,39 @@ h1 {
   .div-out-wksp{
     margin-top: 7%;
   }
-  #images_cont{
+  #images_cont {
     all: unset;
     /* display: block; */
     margin: 0;
   }
-  #images_cont>a{
+  #images_cont > a {
     text-decoration: none;
   }
-  #images_cont2{
+  #images_cont2 {
     /* display: block; */
     margin: 0;
   }
-  .div-in-wksp{
+  .div-in-wksp {
     display: inline;
     margin-right: 3%;
     margin-left: 3%;
   }
-  
-  .workshop-img{
+
+  .workshop-img {
     all: unset;
     height: 18vh;
     width: auto;
     /* padding-left: 30%;
     padding-right: 30%; */
   }
-  .workshop-name{
+  .workshop-name {
     all: unset;
     /* padding-left: 30%;
     padding-right: 30%; */
     color: white;
     font-size: 1rem;
   }
-  .workshop-div{
+  .workshop-div {
     all: unset;
     position: absolute;
     z-index: 5;
@@ -814,7 +814,7 @@ h1 {
     margin: 0 4vw;
   }
 
-  .ath-no-mob{
+  .ath-no-mob {
     display: none;
   }
 }
@@ -1202,10 +1202,11 @@ Animation keyframes
   position: fixed;
   right: 0;
   top: 0;
-  margin: 2.5rem;
+  margin: 2rem;
 }
 
 .hamburger .line {
+  border-radius: 10px;
   width: 2.7rem;
   height: 5px;
   background-color: #ecf0f1;
