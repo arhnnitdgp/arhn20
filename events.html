@@ -153,7 +153,14 @@
 			
 
 	</main>
-	<a href="index.html" class="previous">&laquo; Previous</a>
+	
+	<button class="button" onclick="goBack()">Back</button>
+	<script>
+		function goBack() {
+		  window.history.back(-1);
+		}
+		</script>
+    
 	<!-- aarohan anim js -->
 	<!-- azylinepainter -->
 	<script src="js/lazy-line-painter-1.9.6.min.js"></script>
