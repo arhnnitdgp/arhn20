@@ -45,9 +45,13 @@
   font-family: Muller-thin;
   src: url("../fonts/Muller/MullerNarrowDemo-Light.otf");
 }
+@font-face {
+	font-family: WorkSans;
+	src: url("https://fonts.google.com/specimen/Work+Sans");
+  }
 
 body {
-  font-family: "Muller-thin", sans-serif;
+  font-family: WorkSans;
 }
 
 h1 {
@@ -79,7 +83,7 @@ h1 {
   position: absolute;
   top: 68vh;
   width: 100vw;
-  font-family: Muller;
+  font-family: WorkSans;
   letter-spacing: 4px;
   z-index: 555;
   font-size: 2.5em;
@@ -92,7 +96,7 @@ h1 {
   position: absolute;
   z-index: 55;
   top: 40vh;
-  font-family: Muller;
+  font-family: WorkSans;
   font-size: 4em;
   text-align: center;
   line-height: 1em;
@@ -124,7 +128,7 @@ h1 {
   top: 12vh;
   text-align: right;
   z-index: 5;
-  font-family: "Work Sans", sans-serif;
+  font-family: WorkSans;
   font-weight: 700;
 }
 
@@ -920,7 +924,7 @@ nav li a {
   top: 46%;
   color: #fff;
   text-transform: uppercase;
-  font-family: "Work sans", sans-serif;
+  font-family: Worksans;
   font-weight: 300;
   letter-spacing: 4px;
   text-decoration: none;
@@ -1206,7 +1210,7 @@ Animation keyframes
   }
 }
 .home a {
-  font-family: "Work Sans", sans-serif;
+  font-family: WorkSans;
   color: #fff;
   font-weight: 300;
   font-size: 12px;
