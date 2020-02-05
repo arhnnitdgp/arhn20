@@ -1,41 +1,3 @@
-.scroll-downs {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  
-  width :34px;
-  height: 55px;
-}
-.mousey {
-  transform:rotate(90deg);
-  width: 3px;
-  padding: 10px 15px;
-  height: 35px;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  opacity: 0.75;
-  box-sizing: content-box;
-}
-.scroller {
-  width: 3px;
-  height: 10px;
-  border-radius: 25%;
-  background-color: #fff;
-  animation-name: scroll;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-  animation-iteration-count: infinite;
-}
-@keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
-}
-
-
 @font-face {
   font-family: Muller;
   src: url("../fonts/Muller/MullerNarrowDemo-ExtraBold.otf");
@@ -68,6 +30,9 @@ h1 {
   background: rgb(104, 208, 138) url("../img/load.gif") no-repeat;
   background-position-x: 35%;
   background-position-y: 18%;
+}
+.land-text{
+  font-family: "Muller-thin", sans-serif;
 }
 
 /* landing */
@@ -435,6 +400,9 @@ h1 {
 }
 
 /* workshop */
+.reduce-gap{
+  margin-left: -5%;
+}
 .workshop-div {
   position: absolute;
   z-index: 5;
@@ -444,7 +412,7 @@ h1 {
   padding-top: 15vh;
 }
 
-#images_cont{
+#images_cont {
   margin-top: 10vh;
   text-align: center;
   display: flex;
@@ -452,7 +420,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-#images_cont2{
+#images_cont2 {
   margin-top: 10vh;
   text-align: center;
   display: inline;
@@ -460,7 +428,7 @@ h1 {
   justify-content: space-evenly;
 }
 
-.workshop-img{
+.workshop-img {
   height: auto;
   width: 20vw;
   padding: 0 2.5vw;
@@ -472,20 +440,15 @@ h1 {
   font-size: 2em;
 }
 
-.workshop-name{
-  color:#fff;
-  text-align: center;
-  font-size: 1.5rem;
-}
 .workshop-name {
   color: white;
   text-align: center;
   font-size: 1.5rem;
 }
-.div-out-wksp>a{
+.div-out-wksp > a {
   text-decoration: none;
 }
-#images_cont2>a{
+#images_cont2 > a {
   text-decoration: none;
 }
 
@@ -557,6 +520,28 @@ h1 {
   padding-right: 5vw;
 }
 
+/* Major Attractions */
+.mjr-attr{
+  padding-top: 6em;
+  font-size: 3em;
+  text-align: center;
+  font-weight: 800;
+}
+.caro-img{
+  width: auto;
+  height: 70vh;
+}
+.carousel-caption{
+  background-color: #98b168;
+  border-radius: 9px;
+  color: #000;
+  opacity: 0.9;
+}
+@media only screen and (min-height: 720px) {
+  .mjr-attr{
+    padding-top: 33rem;    
+  }
+}
 @media only screen and (max-width: 600px) {
   /* landing */
   .date {
@@ -742,6 +727,14 @@ h1 {
   }
 
   /* about us */
+  .about-mob-box{
+    background-color: #98b168;
+    opacity: 0.9;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 14px;
+    padding-top: 4%;
+  }
   #about-us {
     height: 100%;
     width: auto;
@@ -776,7 +769,7 @@ h1 {
     width: 80vw;
   }
   #txt-2 {
-    top: 7vh;
+    top: 15vh;
     width: auto;
     color: white;
     right: unset;
@@ -788,41 +781,49 @@ h1 {
   }
 
   /* workshop */
-  #images_cont{
+  .reduce-gap{
+    margin-left: unset;
+  }
+  .div-out-wksp{
+    margin-top: 7%;
+  }
+  #images_cont {
     all: unset;
     /* display: block; */
     margin: 0;
   }
-  #images_cont>a{
+  #images_cont > a {
     text-decoration: none;
   }
-  #images_cont2{
+  #images_cont2 {
     /* display: block; */
     margin: 0;
   }
-  .div-in-wksp{
+  .div-in-wksp {
     display: inline;
+    margin-right: 3%;
+    margin-left: 3%;
   }
-  
-  .workshop-img{
+
+  .workshop-img {
     all: unset;
     height: 18vh;
     width: auto;
     /* padding-left: 30%;
     padding-right: 30%; */
   }
-  .workshop-name{
+  .workshop-name {
     all: unset;
     /* padding-left: 30%;
     padding-right: 30%; */
     color: white;
     font-size: 1rem;
   }
-  .workshop-div{
+  .workshop-div {
     all: unset;
     position: absolute;
     z-index: 5;
-    top: 0;
+    top: 7%;
     left: unset;
     width: 100%;
     height: 100%;
@@ -830,7 +831,7 @@ h1 {
   }
   .workshop-title {
     text-align: center;
-    margin-bottom: 33%;
+    margin-bottom: 25%;
   }
   .workshop-not-mob {
     display: none;
@@ -867,10 +868,40 @@ h1 {
     margin: 0 4vw;
   }
 
-  .ath-no-mob{
+  .ath-no-mob {
     display: none;
   }
+
+  /* Major Attractions */
+  .mjr-attr{
+    padding-top: 6rem;
+    padding-bottom: 5rem;   
+    font-size: 3em;
+  }
+  .slides{
+    margin-top: -57%;
+  }
+  .carousel-indicators{
+    margin-bottom: 55%;
+  }
+  .caro-img{
+    width: unset;
+    height: unset;
+  }
+  .carousel-caption{
+    color: #000;
+    opacity: 0.9;
+    font-size: 0.5rem;
+  }
+  .mjr-attr-title{
+    margin-top: -6%;
+  }
+  .mjr-attr-about{
+    margin-bottom: unset;
+  }
 }
+
+
 
 /* ====================================
 Navigation 
@@ -1245,12 +1276,6 @@ Animation keyframes
   }
 }
 
-.contact-links{
-	text-decoration:none;
-}
-
-
-
 .contact-links {
   text-decoration: none;
 }
@@ -1261,10 +1286,11 @@ Animation keyframes
   position: fixed;
   right: 0;
   top: 0;
-  margin: 2.5rem;
+  margin: 2rem;
 }
 
 .hamburger .line {
+  border-radius: 10px;
   width: 2.7rem;
   height: 5px;
   background-color: #ecf0f1;

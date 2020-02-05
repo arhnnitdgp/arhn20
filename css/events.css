@@ -1311,3 +1311,28 @@ body.notouch {
     opacity: 0;
   }
 }
+	.event-title {
+	  font-style: normal;
+	  margin-top: 2%;
+	  margin-bottom: 5%;
+	  font-size: 2rem;
+	  /* right: 40px; */
+	  color: #000;
+	  text-align: center;
+	}
+	.about-event {
+		font-size: 1.2rem;
+		margin-top: 0px;
+		text-align: center;
+	}
+	.sq, .title {
+	  height: auto;
+	  display: unset;
+	}
+	.row{
+		padding: 20px;
+	}
+	:root {
+	  --main-padding: 0px;
+	}
+  }
