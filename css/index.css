@@ -7,13 +7,9 @@
   font-family: Muller-thin;
   src: url("../fonts/Muller/MullerNarrowDemo-Light.otf");
 }
-@font-face {
-	font-family: WorkSans;
-	src: url("https://fonts.google.com/specimen/Work+Sans");
-  }
 
 body {
-  font-family: WorkSans;
+  font-family: 'Work Sans', sans-serif;
 }
 
 h1 {
@@ -32,7 +28,7 @@ h1 {
   background-position-y: 18%;
 }
 .land-text{
-  font-family: "Muller-thin", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* landing */
@@ -48,7 +44,7 @@ h1 {
   position: absolute;
   top: 68vh;
   width: 100vw;
-  font-family: WorkSans;
+  font-family: 'Work Sans', sans-serif;
   letter-spacing: 4px;
   z-index: 555;
   font-size: 2.5em;
@@ -61,7 +57,7 @@ h1 {
   position: absolute;
   z-index: 55;
   top: 40vh;
-  font-family: WorkSans;
+  font-family: 'Work Sans', sans-serif;
   font-size: 4em;
   text-align: center;
   line-height: 1em;
@@ -93,7 +89,7 @@ h1 {
   top: 12vh;
   text-align: right;
   z-index: 5;
-  font-family: WorkSans;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 
@@ -472,15 +468,16 @@ h1 {
 {
   position: absolute;
   z-index: 55;
-  top: 25%;
+  top: 12%;
   left: 20%;
   color: white;
   font-size: 1.2em;
   width: 65vw;
-  height: 50vh;
+  height: auto;
   background-color: white;
-  opacity: 0.5;
+  opacity: 0.9;
   border-radius: 30px;
+  margin-bottom: 50px;
 }
 
 
@@ -955,7 +952,7 @@ nav li a {
   top: 46%;
   color: #fff;
   text-transform: uppercase;
-  font-family: Worksans;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   letter-spacing: 4px;
   text-decoration: none;
@@ -993,7 +990,7 @@ nav li a:after {
   right: 0;
   bottom: -50px;
   text-transform: none;
-  font-family: "Open sans", serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   font-style: italic;
   letter-spacing: 0;
@@ -1241,7 +1238,7 @@ Animation keyframes
   }
 }
 .home a {
-  font-family: WorkSans;
+  font-family: 'Work Sans', sans-serif; 
   color: #fff;
   font-weight: 300;
   font-size: 12px;

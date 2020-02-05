@@ -3,14 +3,15 @@ width: 5%;
 height: 5%;
 position: absolute;
 z-index: 4;
-background-color: #536d3b;
+background-color: #000;
 top:3%;
 left:4%;
 padding:7;
 border-radius: 5px;
-opacity: 0.8;
+opacity: 0.5;
 display: inline;
 float: left;
+font-family: 'Work Sans', sans-serif;
 
 
 }
@@ -20,10 +21,6 @@ float: left;
 @font-face {
   font-family: Muller-thin;
   src: url("../fonts/Muller/MullerNarrowDemo-Light.otf");
-}
-@font-face {
-  font-family: WorkSans;
-  src: url("https://fonts.google.com/specimen/Work+Sans");
 }
 
 * {
@@ -35,7 +32,7 @@ float: left;
   list-style: none;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-  font-family: inherit;
+  font-family: 'Work Sans', sans-serif;
 }
 
 :root {
@@ -65,7 +62,7 @@ body {
   align-items: center;
   justify-content: center;
   line-height: 1.3;
-  font-family: WorkSans;
+  font-family: 'Work Sans', sans-serif;
 }
 
 #aarohan_2020_logo {
