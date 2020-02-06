@@ -57,7 +57,9 @@
     <!-- Twitter summary card with large image must be at least 280x150px -->
     <meta name="twitter:image" content="https://arhn.co.in/img/arhn_header.png">
 
-
+    <!--Schedule-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.7/jquery.fullPage.css'>
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -80,6 +82,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
     <!-- css file -->
     <link rel="stylesheet" href="css/index.css" />
+    <script>
+        window.console = window.console || function(t) {};
+      </script>
+     <script>
+        if (document.location.search.match(/type=embed/gi)) {
+          window.parent.postMessage("resize", "*");
+        }
+      </script>
 </head>
 
 <body>
@@ -493,6 +503,111 @@
                     </div>
                 </div>
             </div>
+            <!-- Schedule -->
+            
+            <div class="section" id="Schedule">
+                <div style="position: absolute;z-index: 5;text-align: center;top:0%;left: 38%;font-size: 40px;color: #fff;">
+                    <h1 >Schedule</h1>
+                   </div>
+                   <div class="flex-container">
+                       <div class="box_1 color_1 box" style="background-color: #333945;"  >
+                           <div class="center1 ">
+                               <h1>DAY1</h1>
+                           </div>
+                           <div class="inner is_hidden">
+                               
+                                   <div class="table1">
+                                   <div class="header1">Timings</div>
+                                   <table cellspacing="0">
+                                   <tr>
+                                   <th><h3 style="font-weight: bold;">Purpose</h3></th>
+                                   <th>Time</th>
+                                   <th>Venue</th>
+                                   
+                                   </tr>
+                                   <tr>
+                                   <td>Inaugration ceremony</td>
+                                   <td>6:00PM</td>
+                                   <td>Open Arena</td>
+                                   </tr>
+                                   <tr>
+                                     <td>Inaugral Show</td>
+                                     <td>6:30PM</td>
+                                     <td>Open Arena</td>
+                                     </tr>
+                                     <tr>
+                                       <td>Team Ndors Presetation</td>
+                                       <td>7:15PM</td>
+                                       <td>Open Arena</td>
+                                       </tr>
+                                       <tr>
+                                         <td>Bmep Performance</td>
+                                         <td>7:30PM</td>
+                                         <td>Open Venue</td>
+                                         </tr>
+                                   
+                                   </table>
+                                   </div>
+                           </div>
+                           <div class="is_hidden">
+                               <a class="top-right">
+                                   <i class="fa fa-4x fa-times"></i>
+                               </a>
+                           </div>
+                       </div>
+                       <div class=" box_2 color_2 box">
+                           <div class="center1 ">
+                               <h1>DAY2</h1>
+                           </div>
+                           <div class="inner is_hidden">
+                               <div class="col-xs-12">
+                                   <div class="container">
+                                       <p>inner</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="is_hidden">
+                               <a class="top-right">
+                                   <i class="fa fa-4x fa-times"></i>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="box_3  color_3 box">
+                           <div class="center1 ">
+                               <h1>DAY3</h1>
+                           </div>
+                           <div class="inner is_hidden">
+                               <div class="col-xs-12">
+                                   <div class="container">
+                                       <p>inner</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="is_hidden">
+                               <a class="top-right">
+                                   <i class="fa fa-4x fa-times"></i>
+                               </a>
+                           </div>
+                       </div>
+                       <div class=" box_4 color_4 box">
+                           <div class="center1 ">
+                               <h1>DAY4</h1>
+                           </div>
+                           <div class="inner is_hidden">
+                               <div class="col-xs-12">
+                                   <div class="container">
+                                       <p>inner</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="is_hidden">
+                               <a class="top-right">
+                                   <i class="fa fa-4x fa-times"></i>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+            </div>
 
             <!-- contact us 8 -->
             <div class="section" id="contact">
@@ -515,7 +630,38 @@
     </div>
     </div>
 </body>
+<!--Schedule.js-->
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-db44b196776521ea816683afab021f757616c80860d31da6232dedb8d7cc4862.js"></script>
+						<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+						<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+						<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.7/jquery.fullPage.js'></script>
+						<script id="rendered-js">
+$box1 = $('box_1');
+$box4 = $('box_2');
+$box4 = $('box_3');
+$box4 = $('box_4');
 
+$('.box').click(function () {
+  $(this).addClass('box_full');
+  //$(this).addClass('fade_me');
+
+  $(this).siblings().addClass("fade_me");
+  setTimeout(function () {
+    $(".is_hidden").addClass("is_visible").removeClass("is_hidden");
+  }, 500);
+});
+$('a').click(function () {
+  event.stopPropagation();
+  $(".is_visible").addClass("is_hidden").removeClass("is_visible");
+  $(this).closest('.box').removeClass('box_full');
+  $(".box").not(this).removeClass("fade_me");
+});
+
+$(document).ready(function () {
+  $('#fullpage').fullpage();
+});
+
+    </script>
 <!-- index js -->
 <script src="js/index.js"></script>
 <!-- navigation js -->
