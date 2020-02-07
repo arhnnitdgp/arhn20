@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Muller-thin", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 h1 {
@@ -28,7 +28,7 @@ h1 {
   background-position-y: 18%;
 }
 .land-text{
-  font-family: "Muller-thin", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* landing */
@@ -44,7 +44,7 @@ h1 {
   position: absolute;
   top: 68vh;
   width: 100vw;
-  font-family: Muller;
+  font-family: 'Work Sans', sans-serif;
   letter-spacing: 4px;
   z-index: 555;
   font-size: 2.5em;
@@ -57,7 +57,7 @@ h1 {
   position: absolute;
   z-index: 55;
   top: 40vh;
-  font-family: Muller;
+  font-family: 'Work Sans', sans-serif;
   font-size: 4em;
   text-align: center;
   line-height: 1em;
@@ -89,7 +89,7 @@ h1 {
   top: 12vh;
   text-align: right;
   z-index: 5;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 
@@ -463,6 +463,24 @@ h1 {
   padding-left: 7%;
   border-radius: 10px;
 }
+/*sponsors*/
+.sponsor
+{
+  position: absolute;
+  z-index: 55;
+  top: 12%;
+  left: 20%;
+  color: white;
+  font-size: 1.2em;
+  width: 65vw;
+  height: auto;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+
 
 /* ath */
 .ath-box {
@@ -934,7 +952,7 @@ nav li a {
   top: 46%;
   color: #fff;
   text-transform: uppercase;
-  font-family: "Work sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   letter-spacing: 4px;
   text-decoration: none;
@@ -972,7 +990,7 @@ nav li a:after {
   right: 0;
   bottom: -50px;
   text-transform: none;
-  font-family: "Open sans", serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   font-style: italic;
   letter-spacing: 0;
@@ -1220,7 +1238,7 @@ Animation keyframes
   }
 }
 .home a {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif; 
   color: #fff;
   font-weight: 300;
   font-size: 12px;
@@ -1349,10 +1367,13 @@ Animation keyframes
   transform: translateY(-0.91rem) rotate(-45deg);
 }
 
+
+
+
 /* schedule */
 
 .color_1 {
-  background: #524656;
+  background: #372f3a;
 }
 .color_1:hover, .color_1.box_full {
   background: #372f3a;
@@ -1488,4 +1509,85 @@ Animation keyframes
 
 .slide {
   text-align: center;
+}
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  top:100%;
+  padding: 5px;
+  width: 100%;
+  table-layout: fixed;
+  
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
 }
